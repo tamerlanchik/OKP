@@ -23,13 +23,15 @@ else:
 moments = CalculateBaseMoments(i, 160)
 Z = CalculateToothCount(i, gear_z)
 m = CalculateModule(Z, M, materials, 1.3, Ybm)
-gearGeometry = CalculateGeometry(i, Z, m, Yf)
-PrintGears(gearGeometry)
-
 m_common = max(0.3, max(m))
-print("Принимаем одинаковое для всех число зубьев: m=%.1f" % m_common)
+print("Принимаем одинаковый для всех модуль: m=%.1f" % m_common)
+
+gearGeometry = CalculateGeometry(i, Z, [m_common]*len(m), Yf)
 for j in range(len(m)):
     gearGeometry[j]['m'] = m_common
+PrintGears(gearGeometry)
+
+
 
 recalcM = CalculateKpdMoments(gearGeometry, M[-1], kpdOp)
 
