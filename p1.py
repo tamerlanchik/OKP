@@ -90,7 +90,7 @@ def CalculateKpdMoments(gG_, Min_, kpdOp):
         preM = preM/(pair['i']*kpd*kpdOp)
         newM.append(buildStruct(preM, kpd))
 
-    return newM
+    return newM[::-1]
 
 def CalculateBaseMoments(i_, Min_):
     M = [Min_]*(len(i_)+1)
@@ -117,7 +117,7 @@ def InflateMaterials(materials):
     return materials
 
 #   Тищенко, с.68
-def CalculateContactStrength(gears, materials, moments):
+def CalculateContactStrength(gears, materials, M):
     sigma_H = materials['wheel']['sigma_H']
     K = 1.2     #   коэффициент расчётной нагрузки
     zk = 0.9    #   для прямозубых передач
@@ -135,7 +135,7 @@ def CalculateContactStrength(gears, materials, moments):
         else:
             print("Колесная пара %d: проверка на прочность НЕ пройдена: sigma_n=%d, [sigma_H]=%d" % (i, sigma_n, sigma_H))
             return False
-    print("Редуктор прошел проверку на прочность")
+    print("\033[32mРедуктор прошел проверку на прочность\033[0m")
     return True
 
 

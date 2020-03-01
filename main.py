@@ -1,13 +1,12 @@
 from engine import *
 from input import *
 from p1 import *
-minEngineN = round(
-                    CalculatEnginePower(input_params['w_out'],
+
+minEngineN, Mout = CalculatEnginePower(input_params['w_out'],
                                 input_params['e_out'],
                                 input_params['J_load'],
                                  xi=1.1,
-                                 kpd_red=0.8),
-                    2)
+                                 kpd_red=0.8)
 assert minEngineN < engine['N']
 
 materials = InflateMaterials(materials)
@@ -15,14 +14,15 @@ i0 = CalculateTotalGearRatio(engine['n'], input_params['w_out'])
 
 res, momN, momE = CheckEngineWithMoments(engine, input_params['e_out'], input_params['J_load'], i0, 1.1)
 if res == True:
-    print("Проверка двигателя по моментам пройдена")
+    print("\033[32mПроверка двигателя по моментам пройдена\033[0m")
+
 else:
-    print("Проверка двигателя по моменту не пройдена:\nМомент нагрузки: %f\nМомент двигателя:%f" % (momN, momE))
+    print("\033[31mПроверка двигателя по моменту не пройдена:\nМомент нагрузки: %f\nМомент двигателя:%f\033[0m" % (momN, momE))
     exit(1)
 
 i = CalculateGearRatios(i0)
 shaftCount = len(i)
-moments = CalculateBaseMoments(i, 160)
+M = CalculateBaseMoments(i, Mout)
 
 gear_z = [35]*shaftCount        #   минимальное ограничение на число зубьев - против слишком маленьких шестерней
 Z = CalculateToothCount(i, gear_z)
@@ -42,7 +42,7 @@ if not (input_params['d_connect'] + output_shaft_margin < gearGeometry[-1]['d'][
 
 recalcM = CalculateKpdMoments(gearGeometry, M[-1], kpdOp)
 
-res = CalculateContactStrength(gearGeometry, materials, recalcM)
+res = CalculateContactStrength(gearGeometry, materials, [elem['M'] for elem in recalcM])
 
 
 print("Recalculated moments with new KPD: ", "\n".join(map(str, recalcM)))

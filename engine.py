@@ -2,7 +2,7 @@ from math import log10
 def CalculatEnginePower(w_out, e_out, J_out, xi, kpd_red):
     M_load = J_out*e_out            #   момент нагрузки
     N = xi*M_load*w_out/kpd_red     #   минимальная мощность двигла
-    return N
+    return round(N, 2), round(M_load*1000, 1)
 
 def CheckEngineWithMoments(engine, e_out, J_out, i0, xi):
     Km = 0.5        # учитывает инерционность редуктора
