@@ -34,7 +34,7 @@ gearGeometry = CalculateGeometry(i, Z, [m_common]*len(m), Yf)
 for j in range(len(m)):
     gearGeometry[j]['m'] = m_common
 PrintGears(gearGeometry)
-if not (input_params['d_connect'] + output_shaft_margin < gearGeometry[-1]['d'][1]['d']):
+if not (input_params['d_connect'] + output_shaft_margin < gearGeometry[-1]['d'][1]['df']):
     print("\033[31mНедостаточный диаметр выходного колеса")
     exit(1)
 
