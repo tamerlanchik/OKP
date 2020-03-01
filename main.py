@@ -15,7 +15,7 @@ i0 = CalculateGearRatios(engine['n'], input_params['w_out'])
 
 res, momN, momE = CheckEngineWithMoments(engine, input_params['e_out'], input_params['J_load'], i0, 1.1)
 if res == True:
-    print("Промерка двигателя по моментам пройдена")
+    print("Проверка двигателя по моментам пройдена")
 else:
     print("Проверка двигателя по моменту не пройдена:\nМомент нагрузки: %f\nМомент двигателя:%f" % (momN, momE))
     exit(1)
