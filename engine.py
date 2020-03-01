@@ -16,8 +16,6 @@ def CheckEngineWithMoments(engine, e_out, J_out, i0, xi):
     else:
         return (False, M_d_pr, engine['Mn'])
 
-def CalculateGearRatios(nEngine, wLoad):
+def CalculateTotalGearRatio(nEngine, wLoad):
     i0 = nEngine/(wLoad*30/3.14)
-
-    # n = round((3 + 1.85)/2*log10(i0), 0)
     return round(i0, 0)

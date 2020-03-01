@@ -1,5 +1,23 @@
 from input import *
-from math import sqrt
+from math import sqrt, log10
+
+def CalculateGearRatios(i0):
+    n = int(round((3 + 1.85)/2*log10(i0), 0))
+    i_avr = i0**(1./n)
+    assert n >= 5
+    i = [0]*n
+
+    i[0] = (2*i_avr)**(1./4)
+    i[1] = sqrt(i_avr)
+
+    i[-1] = i_avr**2/i[0]
+    i[-2] = i_avr**2/i[1]
+
+    for j in range(2, len(i)-2):
+        i[j] = i_avr
+    return list(map(lambda v: round(v, 2), i))
+
+
 def CalculateToothCount(iList, baseZ):
     Z = []
     for j in range(len(baseZ)):
