@@ -158,6 +158,17 @@ def SupplementListWithLastValue(a, b=[], length = 0):
     res[i] = destList
     return res
 
+def CheckHole(gears, dHole):
+    pair = gears[-1]['d']
+    surplus = (pair[0]['d']+pair[1]['d'])/2 - gears[-2]['d'][1]['da']/2 - dHole/2
+    if surplus > 0:
+        print("\033[32mПроверка на свободное очко пройдена\033[0m")
+        return True
+    else:
+        print("\033[31mПроверка на свободное очко НЕ пройдена: перекрытие %f мм\033[0m" % abs(surplus))
+        return False
+
+
 
 
 # mNew = CalculateBaseMoments(i, 160)

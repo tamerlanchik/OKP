@@ -39,6 +39,8 @@ PrintGears(gearGeometry)
 if not (input_params['d_connect'] + output_shaft_margin < gearGeometry[-1]['d'][1]['df']):
     print("\033[31mНедостаточный диаметр выходного колеса")
     exit(1)
+if not CheckHole(gearGeometry, input_params['d_connect']):
+    exit(-11)
 
 
 
