@@ -138,6 +138,26 @@ def CalculateContactStrength(gears, materials, M):
     print("\033[32mРедуктор прошел проверку на прочность\033[0m")
     return True
 
+def CorrectModules(current, constraints):
+    current, constraints = SupplementListWithLastValue(current, constraints)
+    return [max(current[i], constraints[i]) for i in range(len(current))]
+
+# Приводит два массива к одному размеру
+# путём дублирования последнего элемента
+# меньшего массива
+def SupplementListWithLastValue(a, b=[], length = 0):
+    destList, i = [], 0
+    if b == []:
+        destList, i = a, 0
+    else:
+        destList, i = (a, 0) if len(a) < len(b) else (b, 1)
+    destLen = max(len(a), len(b), length)
+
+    destList += [destList[-1]]*(destLen - len(destList))
+    res = [a, b]
+    res[i] = destList
+    return res
+
 
 
 # mNew = CalculateBaseMoments(i, 160)

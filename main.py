@@ -24,15 +24,17 @@ i = CalculateGearRatios(i0)
 shaftCount = len(i)
 M = CalculateBaseMoments(i, Mout)
 
-gear_z = [35]*shaftCount        #   минимальное ограничение на число зубьев - против слишком маленьких шестерней
+gear_z, _ = SupplementListWithLastValue(minZ, length=shaftCount)   #   минимальное ограничение на число зубьев - против слишком маленьких шестерней
+# gear_z = [35]*shaftCount        #   минимальное ограничение на число зубьев - против слишком маленьких шестерней
 Z = CalculateToothCount(i, gear_z)
 m = CalculateModule(Z, M, materials, 1.3, Ybm)
-m_common = max(minModule, max(m))
-print("Принимаем одинаковый для всех модуль: m=%.1f" % m_common)
+# m_common = max(minModule, max(m))
+# print("Принимаем одинаковый для всех модуль: m=%.1f" % m_common)
+m = CorrectModules(m, minModule)
 
-gearGeometry = CalculateGeometry(i, Z, [m_common]*len(m), Yf)
+gearGeometry = CalculateGeometry(i, Z, m, Yf)
 for j in range(len(m)):
-    gearGeometry[j]['m'] = m_common
+    gearGeometry[j]['m'] = m[j]
 PrintGears(gearGeometry)
 if not (input_params['d_connect'] + output_shaft_margin < gearGeometry[-1]['d'][1]['df']):
     print("\033[31mНедостаточный диаметр выходного колеса")
