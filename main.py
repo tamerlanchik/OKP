@@ -51,4 +51,14 @@ res = CalculateContactStrength(gearGeometry, materials, [elem['M'] for elem in r
 
 print("Recalculated moments with new KPD: ", "\n".join(map(str, recalcM)))
 print("Old moments: ", M[::-1])
+
+loft_wheel['z'], loft_wheel['m'], loft_wheel['M'] = gearGeometry[-1]['d'][1]['z'], gearGeometry[-1]['m'], recalcM[-1]['M']
+print("Проверка люфтовыбирающего колеса")
+res, s = CheckLoftWheel(loft_wheel)
+print(s)
+print(tools.coloredText('DEBUG', 'red'))
+if not res:
+    exit()
+
+
 print("END")
