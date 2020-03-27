@@ -10,3 +10,6 @@ def coloredText(s, color='green'):
 
 def newton2kgs(n):
     return n / 9.807
+
+def kgs2newton(kgs):
+    return kgs * 9.807
