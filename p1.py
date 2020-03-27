@@ -194,27 +194,46 @@ def CheckHole(gears, dHole):
 #   :param int L - начальная длина пружины
 #   :param float A - расстояние от пружины до центра колеса
 #   :param int n - относительное смеещение половин колеса, в зубьях
-def LoshSpringCalculation(z: int, m: float, spinM: float, xi: float, L: int, A: float, n: int, delta: float):
-    phi = radians(360 * n / z)                      # угол поворота одной половины колеса относительно другой
-    A1 = A * cos(phi / 2) - L / 2 * sin(phi / 2)    # новое плечо действия пружины
-    P2 = xi * spinM / (2 * A1)                      # жёсткость пружины
-    P3 = P2 / (1 - delta)                           # максимальное усилие пружины
-    return P3
+#   :param float delta - коэффициент ограничения максимальной деформации
+def LoshSpringCalculation(Wh):
+    Sp = Wh['spring']
+    phi = radians(360 * Wh['n'] / Wh['z'])                      # угол поворота одной половины колеса относительно другой
+    A1 = Wh['A'] * cos(phi / 2) - Sp['L'] / 2 * sin(phi / 2)    # новое плечо действия пружины
+    P2 = Wh['xi'] * Wh['M'] / (2 * A1)                          # жёсткость пружины
+    P3 = P2 / (1 - Wh['d'])                                     # максимальное усилие пружины
+
+    L1 = Sp['L']*cos(phi/2) + 2*Wh['A']*sin(phi/2)              # длина пружины в растянутом состоянии
+    F2 = L1 - Sp['L']                                           # удлинение пружины, мм
+    z = P2/F2                                                   # жёсткость пружины
+    n = Sp['z1']/z                                              # число витков пружины
+    n1 = n + 2.5                                                # число витков с зацепами
+    H0 = (n1 + 1) * Sp['d']                                     # длина пружины в свободном состоянии
+    L_dash = H0 + 2*Sp['D']                                     # полная длина пружины
+    # TODO: в примере от Жуковой есть проверочный расчёт на d
+
+    return P3, L_dash, H0
 
 def CheckLoftWheel(wheel):
-    spring_strength = LoshSpringCalculation(
-        z=wheel['z'], m=wheel['m'], spinM=wheel['M'], xi=wheel['xi'],
-        L=wheel['spring']['L'], A=wheel['A'], n =4, delta=0.2,
-    )
-    if spring_strength > wheel['spring']['P3']:
-        return False, \
-               tools.coloredText('Пружина для люфтовыбирающего колеса слабая: %f > %f', 'red') \
-               % (spring_strength, wheel['spring']['P3'])
-    else:
-        return True, \
-                tools.coloredText('Пружина для люфтовыбирающего колеса годится: \n%s' % str(wheel))
+    try:
+        if wheel['spring']['D']/wheel['spring']['d'] > 10:
+            print(tools.coloredText(
+                'Alert: стоит взять пружину жёсче: текущая = %f' % (wheel['spring']['D']/wheel['spring']['d']),
+                'yellow',
+            ))
+        spring_strength, max_len, sleep_len = LoshSpringCalculation(wheel)
+        print("Результат расчёта пружины:\nP3 = %fН = %fкгс\nLmax=%f\nLsleep=%f"
+              % (spring_strength, tools.newton2kgs(spring_strength), max_len, sleep_len))
+        spring_strength = tools.newton2kgs(spring_strength)
+        if spring_strength > wheel['spring']['P3']:
+            return False, \
+                   tools.coloredText('Пружина для люфтовыбирающего колеса слабая: %f > %f', 'red') \
+                   % (spring_strength, wheel['spring']['P3'])
+        if abs(max_len - wheel['spring']['L'])/max_len > 0.1:
+            return False, \
+                   tools.coloredText('Пружина для люфтовыбирающего колеса сильно отличается по длине: %f !~ %f', 'red') \
+                   % (max_len, wheel['spring']['L'])
 
-def inflateLoftWheel(dest, z, m, M):
-    dest['z'] = z
-    dest['m'] = m
-    dest['M'] = M
+        return True, \
+            tools.coloredText('Пружина для люфтовыбирающего колеса годится: \n%s' % str(wheel), 'green')
+    except():
+        return False, tools.coloredText('Error', 'red')

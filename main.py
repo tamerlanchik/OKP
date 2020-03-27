@@ -56,7 +56,6 @@ loft_wheel['z'], loft_wheel['m'], loft_wheel['M'] = gearGeometry[-1]['d'][1]['z'
 print("Проверка люфтовыбирающего колеса")
 res, s = CheckLoftWheel(loft_wheel)
 print(s)
-print(tools.coloredText('DEBUG', 'red'))
 if not res:
     exit()
 
