@@ -205,6 +205,7 @@ def LoshSpringCalculation(Wh):
 
     return P3, L_dash, H0
 
+
 def CheckLoftWheel(wheel):
     try:
         if wheel['spring']['D']/wheel['spring']['d'] > 10:
