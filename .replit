@@ -1,0 +1,2 @@
+language = "python3"
+  run = "chmod +x run.sh && ./run.sh"
