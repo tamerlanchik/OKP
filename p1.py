@@ -2,10 +2,12 @@ import tools
 from input import *
 from math import sqrt, log10, sin, cos, radians
 
+from latex_storage import Storage
+
 
 def CalculateGearRatios(i0):
-    n = int(round((3 + 1.85) / 2 * log10(i0), 0))
-    i_avr = i0 ** (1. / n)
+    n = int(round((3 + 1.85) / 2 * log10(i0), 0));  Storage().put(gears_n=n)
+    i_avr = i0 ** (1. / n);                         Storage().put(i_avr=i_avr)
     assert n >= 5
     i = [0] * n
 
@@ -37,23 +39,25 @@ def CalculateModule(Z, M, material, K, Ybm):
     for i in range(len(M) - 1):
         z_gear = min(Z[2 * i], Z[2 * i + 1])
         z_wheel = max(Z[2 * i], Z[2 * i + 1])
-        a = YF(z_gear) / material['gear']['sigma_f']
-        b = YF(z_wheel) / material['wheel']['sigma_f']
+        a = YF(z_gear) / material['gear']['sigma_f'];   Storage().put(**{'YF_gear%d'%(i+1): a})
+        b = YF(z_wheel) / material['wheel']['sigma_f']; Storage().put(**{'YF_wheel%d'%(i+1): a})
         if a > b:
             yf = YF(YF(z_gear))
             sigma = material['gear']['sigma_f']
             z = z_gear
-            print("Прочность по шестерне: Z=", z_gear)
+            print("Прочность по шестерне: Z=", z_gear); Storage().put(**{'YF_choose%d'%(i+1): 'шестерне'})
         else:
             yf = YF(YF(z_wheel))
             sigma = material['wheel']['sigma_f']
             z = z_wheel
-            print("Прочность по колесу: Z=", z_wheel)
+            print("Прочность по колесу: Z=", z_wheel);   Storage().put(**{'YF_choose%d'%(i+1): 'колесу'})
+        Storage().put(**{'sigma%d'%(i+1): sigma})
 
         m_ = 1.4 * (
                 M[i] * K * Yf / (Ybm * z * sigma)
         ) ** (1. / 3)
         m.append(round(m_, eps_module))
+        Storage().put(**{'m%d'%(i+1): m[-1]})
     print("Max module: %.2f" % max(m))
     return m
 
@@ -98,6 +102,14 @@ def CalculateKpdMoments(gG_, Min_, kpdOp):
         preM = preM / (pair['i'] * kpd * kpdOp)
         newM.append(buildStruct(preM, kpd))
 
+        tmpl = 'kpd.{0}.%s'.format(i+1)
+        Storage().put(**{
+            tmpl % 'F': F,
+            tmpl % 'c': c,
+            tmpl % 'kpd': kpd,
+            tmpl % 'newM': preM
+        })
+
     return newM[::-1]
 
 
@@ -106,7 +118,7 @@ def CalculateBaseMoments(i_, Min_):
     mPre = Min_
     for i in range(len(i_) - 1, -1, -1):
         mPre /= (i_[i] * 0.98 * 0.99)
-        M[i] = mPre
+        M[i] = round(mPre, 2)
     return M
 
 
@@ -142,6 +154,12 @@ def CalculateContactStrength(gears, materials, M):
         sigma_n = 108.5 * zk / (a_w * i0) * sqrt(
             (i0 + 1) ** 3 * K * M[i] / b
         )
+
+        tmpl = 'cs.{0}.%s'.format(i+1)
+        Storage().put(**{
+            tmpl % 'aw': a_w,
+            tmpl % 'sigma_n': sigma_n,
+        })
 
         if sigma_n < sigma_H:
             print("Колесная пара %d: проверка на прочность пройдена: sigma_n=%d, [sigma_H]=%d" % (i, sigma_n, sigma_H))
@@ -203,6 +221,12 @@ def LoshSpringCalculation(Wh):
     L_dash = H0 + 2*Sp['D']                                     # полная длина пружины
     # TODO: в примере от Жуковой есть проверочный расчёт на d
 
+    tmpl = 'loft.%s'
+    print(locals()['phi'])
+    damp = locals()
+    Storage().put(**dict((tmpl % name, damp[name]) for name in (
+        'phi', 'A1', 'P2', 'P3', 'L1', 'F2', 'z', 'n', 'n1', 'H0', 'L_dash'
+    )))
     return P3, L_dash, H0
 
 

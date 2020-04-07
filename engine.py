@@ -1,11 +1,15 @@
 from math import log10
+
+from latex_storage import Storage
+
+
 def CalculatEnginePower(w_out, e_out, J_out, xi, kpd_red):
     M_load = J_out*e_out            #   момент нагрузки
     N = xi*M_load*w_out/kpd_red     #   минимальная мощность двигла
-    return round(N, 2), round(M_load*1000, 1)
+    return round(N, 2), int(M_load*1000)
 
 def CheckEngineWithMoments(engine, e_out, J_out, i0, xi):
-    Km = 0.5        # учитывает инерционность редуктора
+    Km = 0.5; Storage().put(Km=Km)        # учитывает инерционность редуктора
 
     #   приведенная к валу динамическая нагрузка
     M_d_pr = e_out*i0 * (
