@@ -8,7 +8,9 @@ class Storage(object):
         # print(kwargs)
         for key, value in kwargs.items():
             if isinstance(value, float):
-                value = round(value, 2)
+                # value = round(value, 2)
+                temp = value - int(value)
+                value = int(value) + float('{:g}'.format(float('{:.{p}g}'.format(temp, p=2))))
             self._put(key, value)
 
     def pop(self, key):

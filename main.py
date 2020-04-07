@@ -26,6 +26,7 @@ def dump_data(storage, filename):
     storage.put(**dict(
         ('spr.%s' % key, value) for key, value in loft_wheel['spring'].items()
     ))
+    storage.put(text=0.123*10**(5))
     storage.export(filename)
 
 dump_data(Storage(), 'latex/work.json')
