@@ -1,3 +1,6 @@
+import os
+
+
 class Storage(object):
     _map = {}
 
@@ -21,6 +24,18 @@ class Storage(object):
         with open(filename, 'w', encoding='utf8') as file:
             import json
             json.dump(self._map, file, indent=4, ensure_ascii=False)
+        # self.append_tex_labels("latex/work.tex")
+
+    # def append_tex_labels(self, filename):
+    #     s = ''.join(['\label{%s}' % key for key, value in self._map.items() ])
+    #     f = open(filename, "r")
+    #     lines = f.read().splitlines()
+    #     lines[-1] = s
+    #     # f.write('\n'.join(lines))
+    #     f.close()
+    #     f = open(filename, "w")
+    #     f.write('\n'.join(lines))
+    #     f.close()
 
     def __new__(cls):
         if not hasattr(cls, 'instance'):

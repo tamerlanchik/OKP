@@ -2,3 +2,7 @@ venv/
 .idea/
 __pycache__/
 log
+*.aux
+*.fls
+*.fdb_latexmk
+*.gz

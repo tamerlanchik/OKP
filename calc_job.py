@@ -11,6 +11,7 @@ assert minEngineN < engine['N']
 
 materials = InflateMaterials(materials)
 i0 = CalculateTotalGearRatio(engine['n'], input_params['w_out'])
+Storage().put(**{'i0': i0})
 
 res, momN, momE = CheckEngineWithMoments(engine, input_params['e_out'], input_params['J_load'], i0, 1.1)
 if res == True:
@@ -32,7 +33,10 @@ m = CalculateModule(Z, M, materials, 1.3, Ybm)
 # print("Принимаем одинаковый для всех модуль: m=%.1f" % m_common)
 m = CorrectModules(m, minModule)
 
-gearGeometry = CalculateGeometry(i, Z, m, Yf)
+gearGeometry, realI = CalculateGeometry(i, Z, m, Yf)
+Storage().put(deltaI=abs(i0-realI)/i0)
+i0 = realI
+
 for j in range(len(m)):
     gearGeometry[j]['m'] = m[j]
 PrintGears(gearGeometry)

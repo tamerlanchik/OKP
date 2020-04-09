@@ -41,21 +41,32 @@ def CalculateModule(Z, M, material, K, Ybm):
         z_wheel = max(Z[2 * i], Z[2 * i + 1])
         a = YF(z_gear) / material['gear']['sigma_f'];   Storage().put(**{'YF_gear%d'%(i+1): a})
         b = YF(z_wheel) / material['wheel']['sigma_f']; Storage().put(**{'YF_wheel%d'%(i+1): a})
+        Storage().put(**{
+            'gear.yf.%d' % (i+1): YF(z_gear),
+            'wheel.yf.%d' % (i+1): YF(z_wheel),
+            'gear./.%d' % (i+1): a,
+            'wheel./.%d' % (i+1): b,
+        })
         if a > b:
             yf = YF(YF(z_gear))
             sigma = material['gear']['sigma_f']
             z = z_gear
+            ind = i
             print("Прочность по шестерне: Z=", z_gear); Storage().put(**{'YF_choose%d'%(i+1): 'шестерне'})
         else:
             yf = YF(YF(z_wheel))
             sigma = material['wheel']['sigma_f']
             z = z_wheel
+            ind = i+1
             print("Прочность по колесу: Z=", z_wheel);   Storage().put(**{'YF_choose%d'%(i+1): 'колесу'})
         Storage().put(**{'sigma%d'%(i+1): sigma})
+        Storage().put(**{'yf.%d'%(i+1): yf})
+        Storage().put(**{'z.%d'%(i+1): z})
 
         m_ = 1.4 * (
-                M[i] * K * Yf / (Ybm * z * sigma)
+                M[ind] * K * Yf / (Ybm * z * sigma)
         ) ** (1. / 3)
+        Storage().put(**{'gear.%d.minm' % (i+1): m_-0.05})  # чтобы не перерисовывать это гавно заново
         m.append(round(m_, eps_module))
         Storage().put(**{'m%d'%(i+1): m[-1]})
     print("Max module: %.2f" % max(m))
@@ -70,18 +81,21 @@ def CalculateGearDiam(z, m):
     d = m * z
     da = 2 * m + d
     df = d - 2 * m * (1 + c)
-    return {'d': round(d, eps_d), 'da': round(da, eps_d), 'df': round(df, eps_d), 'z': round(z, 0)}
+    return {'d': round(d, eps_d), 'da': round(da, eps_d), 'df': round(df, eps_d), 'z': int(z)}
 
 
 def CalculateGeometry(i_, Z_, m_, Yf_):
     data = []
+    realI = 1;
     for i in range(len(i_)):
         D = [CalculateGearDiam(Z_[2 * i], m_[i]), CalculateGearDiam(Z_[2 * i + 1], m_[i])]
         b = m_[i] * Yf_
         a = 0.5 * m_[i] * (Z_[2 * i] + Z_[2 * i + 1])
         dt = {'n': [2 * i + 1, 2 * i + 2], 'd': D, 'b': b, 'a': round(a, eps_d), 'i': i_[i], 'm': m_[i]}
         data.append(dt)
-    return data
+        realI = realI * D[1]['z']/D[0]['z']
+    return data, realI
+
 
 
 def CalculateKpdMoments(gG_, Min_, kpdOp):
@@ -216,7 +230,7 @@ def LoshSpringCalculation(Wh):
     F2 = L1 - Sp['L']                                           # удлинение пружины, мм
     z = P2/F2                                                   # жёсткость пружины
     n = round(Sp['z1']/z)                                       # число витков пружины
-    n1 = n + 2.5                                                # число витков с зацепами
+    n1 = n                                                # число витков с зацепами
     H0 = (n1 + 1) * Sp['d']                                     # длина пружины в свободном состоянии
     L_dash = H0 + 2*Sp['D']                                     # полная длина пружины
     # TODO: в примере от Жуковой есть проверочный расчёт на d

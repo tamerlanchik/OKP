@@ -1,0 +1,359 @@
+\documentclass[14pt,a4paper,russian]{scrartcl}
+\usepackage[utf8]{inputenc} % кодировка
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{mathtext}
+\usepackage{indentfirst}    % красная строка для первого параграфа
+\usepackage{misccorr}   % настройки для российской полиграфии
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{caption}
+% \usepackage{times}
+% \usepackage{amsmath}    % математическая нотация
+% \renewcommand{\rmdefault}{ftm}
+\usepackage{lastpage}
+
+\usepackage{setspace} 
+\usepackage{fancybox,fancyhdr}
+% \usepackage[utf8]{inputenc}
+% \usepackage[russian,english]{babel}
+% \usepackage[T2A]{fontenc}
+% \usepackage{indentfirst}w
+\usepackage{amsmath,amssymb}
+\usepackage[includefoot, heightrounded]{geometry}   % поля
+\geometry{left=30mm}
+\geometry{right=20mm}
+\geometry{top=20mm}
+\geometry{bottom=10mm}
+\begin{document}
+% \pagestyle{fancy}
+\fancyhead[R]{Кочнов Андрей, ИУ1-62}
+% \renewcommand{\onlyinsubfile}[1]{}
+% \renewcommand{\notinsubfile}[1]{#1}
+\captionsetup[table]{name=Таблица}
+
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{p{0.6\linewidth}p{0.4\linewidth}}
+            Заготовка РПЗ по ОКП&Кочнов Андрей, ИУ1-62\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+\section*{Техническое задание}
+\subsubsection*{Тема: привод следящей системы (задание №3)}
+Разработать конструкцию привода следящей системы по предложенной схеме
+в соответствии с заданным вариантом.
+\begin{table}[h]
+    \begin{center}
+        \begin{tabular}{|p{0.6\linewidth}|p{0.4\linewidth}|}
+            \hline
+            Вариант &   2 \\
+            \hline
+            Скорость вращения выходного вала \( \omega,\ c^{-1} \) & 5 \\
+            \hline
+            Ускорение вращения выходного вала \( \epsilon,\ c^{-2} \) & 36 \\
+            % 0.5 & 360 & 4 & 110 & 0.022 & 0.04 \\
+            \hline
+            Момент инерции нагрузки \( J,\ \text{кгм}^2 \) & 0,015\\
+            \hline
+            Угол поворота выходного вала \( \phi \) & 120\\
+            \hline
+            Присоединительный диаметр \( d,\ \text{мм} \) & 50 \\
+            \hline
+            Тип потенциометра & ПТП или ППМЛ - выбирается самостоятельно
+                с соответствующим обоснованием \\
+            \hline
+            Тип электродвигателя & Выбирать из серий ДИД, ДГ \\
+            \hline
+        \end{tabular}
+        \caption{Исходные данные для расчёта}\label{tab:source}
+    \end{center}
+\end{table}
+
+\newcommand{\Mnom}{M_{\text{ном}}}
+\newcommand{\Mp}{M_{\text{п}}}
+\newcommand{\nn}{n_{\text{ном}}}
+\newcommand{\nv}{n_{\text{вых}}}
+
+\setcounter{section}{1}
+\section*{Расчётная часть}
+\subsection{Предварительный расчёт электродвигателя}
+    Сначала вычислим момент нагрузки на выходном валу:
+    \[ M = J\epsilon = 0,015\cdot36 = 540\ \text{Нмм}\]
+    Затем вычислим минимально возможную мощность двигателя, используя формулу
+    \[ N = \xi\frac{M\omega}{\eta_p}. \]
+    Приняв запас прочности \( \xi=1,1 \), а оценочный КПД редуктора \( \eta_p=0.8 \),
+    получим \( N=¿N_min¡\ \text{Вт} \).
+
+    Предварительно выберем двигатель ¿engine.name¡:
+    \begin{table}[h!]
+        \begin{center}
+            \begin{tabular}{|p{0.6\linewidth}|p{0.4\linewidth}|}
+                \hline
+                Мощность \( N \), Вт & ¿engine.N¡ \\
+                \hline
+                Номинальный момент \( \Mnom \), Нмм & ¿engine.Mn¡ \\
+                \hline
+                Пусковой момент \( \Mp \), Нмм &    ¿engine.Mstart¡ \\
+                \hline
+                Скорость вращения вала \( \nn \), об\( \backslash \)мин     & ¿engine.n¡ \\
+                \hline
+                Момент инерции ротора \( J_p \), \( \text{кгм}^2 \) & ¿engine.Jr¡ \\
+                \hline
+                Напряжение питания U, В & ¿engine.U¡ \\
+                \hline
+            \end{tabular}
+            \caption{Параметры двигателя}\label{tab:engine}
+        \end{center}
+    \end{table}
+
+    \subsection{Кинематический и вспомогательный силовой расчёты}
+    \subsubsection{Определение общего передаточного отношения}
+        Вычислим общее передаточное отношение редуктора по формуле 
+         \[ i_0 = \frac{\nn}{\nv}. \]
+         Скорость вращения выходного вала находим по формуле 
+          \[ \nv = \frac{30\omega}{\pi}. \]
+         В результате получаем
+          \[ i_0 = \frac{\nn\pi}{30\omega} = \frac{¿engine.n¡\cdot3,14}{30\cdot5} = ¿i0¡\]
+    
+    \subsubsection{Определение числа ступеней}
+        Число ступеней будем определять исходя из критериев минимизации
+        момента инерции и габаритов, используя обьединённую формулу:
+         \[ n = \frac{3+1,85}{2}\cdot\lg\ i0 \approx ¿gears_n¡ \]
+        Таким образом, редуктор будет иметь ¿gears_n¡ ступеней.
+    
+    \subsubsection{Определение передаточных отношений каждой ступени}
+        Распределение будет производить исходя из критерия минимизации
+        момента инерции.
+        Сперва вычислим среднее геометрические передаточное отношение:
+        \newcommand{\iavr}{i_{\text{ср}}}
+         \[ \iavr = \sqrt[n]{i_0} = \sqrt[¿gears_n¡]{¿i0¡} = ¿i_avr¡ \]
+        Затем рассчитаем непосредственно значения передаточного отношения для каждой ступени:
+         \[ i_1 = \sqrt[4]{2\iavr} = ¿i0-1¡ \]
+        \[ i_2 = \sqrt{\iavr} = ¿i1-2¡ \]
+        \[ i_3 = \iavr = ¿i2-3¡ \]
+        \[ i_4 = \frac{\iavr^2}{i_2} = ¿i3-4¡ \]
+        \[ i_5 = \frac{\iavr^2}{i_1} = ¿i4-5¡\]
+    
+    \subsubsection{Определение числа зубьев зубчатых колёс}
+        Для подбора числа зубьев для шестерней имеет смысл брать минимальные из стандартного ряда,
+        однако в процессе разработки конструкции делаются поправки исходя из необходимых
+        минимальных расстояний между валами.
+        Для колёс рассчитаем числа зубьев \( z_i \), воспользовавшись формулой
+        \[ z_i = z_{i-1}i_j, \]
+        где \( z_{i-1} \) - число зубьев соответствующей шестерни, а \( i_j \) - 
+        передаточное отношение данной пары.
+        
+        По итогам расчётов получаем следущие значения:
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.13\linewidth}p{0.23\linewidth}p{0.2\linewidth}}
+                    \hline
+                    Номер ступени & Z для шестерни & Z для колеса \\
+                    \hline
+                    1   &   ¿gears.1.z¡ & ¿gears.2.z¡ \\
+                    % \hline
+                    2   &   ¿gears.3.z¡ & ¿gears.4.z¡ \\
+                    % \hline
+                    3   &   ¿gears.5.z¡ & ¿gears.6.z¡ \\
+                    % \hline
+                    4   &   ¿gears.7.z¡ & ¿gears.8.z¡ \\
+                    % \hline
+                    5   &   ¿gears.9.z¡ & ¿gears.10.z¡ \\
+                    \hline
+                \end{tabular}
+                \caption{Значения числа зубьев для зубчатых колёс}\label{tab:gears_z}
+            \end{center}
+        \end{table}
+        
+        В связи с тем, что стандартный ряд числа зубьев весьма дискретен, 
+        результирующее передаточное отношение редуктора может отличаться от начального.
+        Вычислим погрешность:
+        \[ \Delta i = \frac{|i_0 - i_{\text{фактич.}}|}{i_0} =  
+            \frac{|¿i0¡-¿realI¡|}{¿i0¡} = ¿deltaI¡\]
+        
+        Результат вполне удовлетворяет требования точности.
+        
+    \subsubsection{Расчёт крутящих моментов}
+        Для расчёта дальнейших параметров зубчатых колёс необходимо найти крутящие моменты,
+        действующие на каждом из валов редуктора. Для этого воспользуемся формулой
+        \[ M_p = \frac{M_q}{i_{p-q}\eta_{pq}\eta_n}, \]
+        где \( M_p, M_q \) - моменты нагрузки на p-м и q-м валах,
+            \( i_{p-q} \) - передаточное отношение между валами,
+            \( \eta_{pq},\ \eta_n \) - КПД передачи (для цилиндрической 0,98) и подшипников (0,99)\par
+        
+        По итогам вычислений получаем следующий результат (\( M_0 \) - вал двигателя):
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.2\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}}
+                    \hline
+                    Номер вала, p & 0 & 1 & 2 & 3 & 4 & 5 \\
+                    \hline
+                    \( M_p \) & ¿M0¡ & ¿M1¡ & ¿M2¡ & ¿M3¡ & ¿M4¡ & ¿M5¡ \\
+                    \hline
+                \end{tabular}
+                \caption{Оценочные значения моментов на валах}\label{tab:moments__shaft_estimate}
+            \end{center}
+        \end{table}
+
+        Заметим, что \( M_0=¿M0¡ \), что в 2 раза больше значения номинального момента двигателя,
+        т.е. имеем большой запас по моменту двигателя.
+
+    \subsubsection{Определение модуля зацепления}
+        Модуль зацепления берётся по результатам расчётов зубьев на контактную и
+        изгибную прочность. Расчёт на изгибную прочность проводится по наиболее нагруженной ступени в целях
+        сокращения математических выкладок. Основная его формула
+        \[ m \geq K_m\sqrt[3]{\frac{K\cdot M\cdot Y_F}{z\cdot\psi_{bm}\cdot[\sigma_F]}}, \]
+        где m - ограничение снизу на искомый модуль,\par
+            \( K_m \) - коэффициент, для прямозубых колес равный 1,4\par 
+            \( K \) - коэффициент расчётной нагрузки (1,1..1,5)\par
+            \( M \) - крутящий момент на соответствующем колесе\par
+            \( Y_F \) - коэффициент формы зуба, выбирается по таблице/графику\par
+            \( \psi_{bm} \) - коэффициент формы зубчатого венца, для мелкомодульных передач равен 3..16\par
+            \( [\sigma_F] \) - допускаемое изгибное напряжение для материала\par
+        
+        Выберем материалы для колёс:
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.5\linewidth}p{0.2\linewidth}p{0.2\linewidth}}
+                    \hline
+                        & Шестерня  &   Колесо\\
+                    \hline
+                    Название    & ¿material.g.name¡ &   ¿material.w.name¡ \\
+                    Предел прочности \( \sigma_b \), МПа  & ¿material.g.sigma_b¡ & ¿material.w.sigma_b¡ \\
+                    Предел текучести \( \sigma_t \), МПа  &   ¿material.g.sigma_t¡ & ¿material.w.sigma_t¡ \\
+                    Предел выносливости \( \sigma_{-1} \), МПа  & ¿material.g.sigma_1¡ & ¿material.w.sigma_1¡ \\
+                    *Изгибное напряжение \( [\sigma_f] \), МПа & ¿material.g.sigma_f¡ & ¿material.w.sigma_f¡ \\
+                    *Контактное напряжение \( \sigma_H \), МПа & ¿material.g.sigma_H¡ & ¿material.w.sigma_H¡ \\
+                    \hline
+                    \emph{*будет вычислено далее}
+                \end{tabular}
+                \caption{Параметры материалов для зубчатых колёс}\label{tab:gear_materials}
+            \end{center}
+        \end{table}
+
+        % \newpage
+        Допускаемое изгибное напряжение \( \sigma_f \) вычисляется по формуле 
+        \[ [\sigma_f] = \frac{\sigma_{-1}}{n}, \]
+        где \( n \) - запас прочности. Принимаем \( n=1,7 \).\par
+        
+        Модуль для пары колёс вычисляется по тому из двух, которое обладает
+        большей относительной характеристикой прочности.
+
+       \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.5\linewidth}p{0.5\linewidth}}
+                    Для шестерни:  &   Для колеса:\\
+                    \[ \frac{Y_F}{[\sigma_f]} = 
+                        \frac{¿gear.yf.5¡}{¿material.g.sigma_f¡} = ¿gear./.5¡\] &
+                    \[ \frac{Y_F}{[\sigma_f]} = 
+                    \frac{¿wheel.yf.5¡}{¿material.w.sigma_f¡} = ¿wheel./.5¡ \]\\                    
+                \end{tabular}
+            \end{center}
+        \end{table}
+
+        Считаем по ¿YF_choose5¡. Задаём \( K=1,3;\ \psi_{bm}=¿Yb¡ \):
+        \[ m \geq 1,4\sqrt[3]{\frac{1,3\cdot ¿M5¡\cdot ¿yf.5¡}{¿z.5¡\cdot ¿Yb¡\cdot ¿sigma5¡}}=¿gear.5.minm¡ \]
+        
+        Примем в качестве минимального момента ближайший табличный ¿gears.1.m¡. Можно назначить его
+        всем зубчатым колесам. Однако в процессе проектирования пришлось увеличить модуль некоторых
+        пар зубчатых колес в целях увеличения их размера.
+
+% TODO: расчёт на контактную прочность
+    
+    \subsubsection{Итоговый геометрический расчёт зубчатых передач}
+        В этом пункте окончательно посчитаем оставшиеся параметры зубчатых передач,
+        необходимые для построения чертежа, а именно: диаметры детительной окружности, окружностей вершин
+        и впадин, ширину венца и межосевое расстояние.\par
+
+        Диаметр делительной окружности рассчитывается по формуле
+        \[ d = m\cdot z, \]
+        где m и z - модуль и число зубьев соответствующего колеса.\par
+
+        Диаметры окружностей вершин \( d_a \)и впадин \( d_f \)вычисляются по следующим формулам:
+        \[ d_a = d + 2m,\qquad d_f = d - 2m(1+c),\]
+        где с - коэффициент радиального зазора: 
+            \( c=0,5 \) при \( m\leq 0,5 \), \( c=0,35 \) при \( 0,5<m<1 \).
+        
+        Для получения ширины колеса и межосевого расстояния служат формулы
+        \[ b=\psi_{bm}m, \qquad  a = 0,5m(z_1+z_2)\]
+        
+        Приведём сводную таблицу с полными необходимыми характеристиками зубчатых колёс.
+        Выберем материалы для колёс:
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.04\linewidth}|p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}}
+                    \hline
+                    №   & 1&2&3&4&5&6&7&8&9&10\\
+                    \hline
+                    z & ¿gears.1.z¡ & ¿gears.2.z¡ & ¿gears.3.z¡ & ¿gears.4.z¡ & ¿gears.5.z¡ & ¿gears.8.z¡ & ¿gears.7.z¡ & ¿gears.8.z¡ & ¿gears.9.z¡ & ¿gears.10.z¡ \\
+                    d & ¿gears.1.d¡ & ¿gears.3.d¡ & ¿gears.3.d¡ & ¿gears.4.d¡ & ¿gears.5.d¡ & ¿gears.6.d¡ & ¿gears.7.d¡ & ¿gears.8.d¡ & ¿gears.9.d¡ & ¿gears.10.d¡ \\
+                    da & ¿gears.1.da¡ & ¿gears.2.da¡ & ¿gears.3.da¡ & ¿gears.4.da¡ & ¿gears.5.da¡ & ¿gears.6.da¡ & ¿gears.7.da¡ & ¿gears.8.da¡ & ¿gears.9.da¡ & ¿gears.10.d¡ \\
+                    df & ¿gears.1.df¡ & ¿gears.3.df¡ & ¿gears.3.df¡ & ¿gears.4.df¡ & ¿gears.5.df¡ & ¿gears.6.df¡ & ¿gears.7.df¡ & ¿gears.8.df¡ & ¿gears.9.df¡ & ¿gears.10.df¡ \\
+                    b & \multicolumn{2}{c}{¿gears.1.b¡} &  \multicolumn{2}{c}{¿gears.3.b¡} &  \multicolumn{2}{c}{¿gears.5.b¡} & \multicolumn{2}{c}{¿gears.7.b¡} &\multicolumn{2}{c}{¿gears.9.b¡} \\
+                    a & \multicolumn{2}{c}{¿gears.1.a¡} & \multicolumn{2}{c}{¿gears.3.a¡} & \multicolumn{2}{c}{¿gears.5.a¡} & \multicolumn{2}{c}{¿gears.7.a¡} & \multicolumn{2}{c}{¿gears.9.a¡} \\
+                    m & \multicolumn{2}{c}{¿gears.1.m¡} & \multicolumn{2}{c}{¿gears.3.m¡} & \multicolumn{2}{c}{¿gears.5.m¡} & \multicolumn{2}{c}{¿gears.7.m¡} & \multicolumn{2}{c}{¿gears.9.m¡} \\
+                    \hline
+                \end{tabular}
+                \caption{{Характеристики зубчатых колес}}\label{tab:gears_digest}
+            \end{center}
+        \end{table}
+
+    
+\subsection{Силовые расчёты}
+    \subsubsection{Расчёт пружины люфтовыбирающего колеса}
+        Люфтовыбирающим колесом решено сделать выходное, под номером 10.
+        Расчёт пружины ведётся по необходимому рабочему усилию, которое
+        вычисляется по формуле:
+        \[ P_2 = \frac{\xi M_{\text{кр}}}{2(A\ cos\frac{180^\circ n}{z}
+                - \frac{L}{2}\ sin\frac{180^\circ n}{z}},\]
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.025\linewidth}p{0.01\linewidth}p{0.8\linewidth}}
+                    где & A & - расстояние от оси пружины до центра колеса,\\
+                    & n & - число зубьев, на которое производится взаимное смещение составных частей колеса,\\
+                    & L & - начальная длина пружины.
+                \end{tabular}
+            \end{center}
+        \end{table}
+
+        Приняв L=¿spr.L¡мм, A=¿loftwheel.A¡мм, n=¿loftwheel.n¡, 
+        z=¿loftwheel.z¡, \( \xi=¿loftwheel.xi¡ \), получим:
+        \[ P_2 = \frac{¿loftwheel.xi¡\cdot¿loftwheel.M¡}{¿loftwheel.A¡\cdot cos\frac{180^\circ\cdot¿loftwheel.n¡}{¿loftwheel.z¡}
+                - \frac{¿spr.L¡}{2}\cdot sin\frac{180^\circ\cdot¿loftwheel.n¡}{¿loftwheel.z¡}} = ¿loft.P2¡\ H\]
+        
+        Сила пружины при максимальной деформации:
+        \[ P_3 = \frac{P_2}{1-\delta} = \frac{¿loft.P2¡}{1-¿loftwheel.d¡} = ¿loft.P3¡\ H\]
+
+        По найденному усилию по таблицам найдём подходящую пружину, склоняясь к более коротким
+        и жёстким. Наш выбор: ¿spr.name¡ с параметрами: \( P_3 \) = ¿spr.P3¡ Н, d=¿spr.d¡ мм, 
+        D=¿spr.z1¡ мм, \( z_1 \)=¿spr.z1¡ Н/мм, \( f_3 \)=¿spr.f3¡ мм. Далее рассчитаем параметры
+        пружины для нашего случая.
+
+        Определим величину деформации \( F_2 \)при нагрузке \( P_2 \). Если 
+        \[ L_1 =  L\ cos\frac{180^\circ n}{z} + 2A\ sin\frac{180^\circ n}{z} = ¿loft.L1¡\ \text{мм},\]
+        то 
+        \[ F_2 = L_1 - L = ¿loft.F2¡\ \text{мм}.\]
+
+        Тогда жёсткость определяемой пружины будет
+        \[ z = \frac{P_2}{F_2} = \frac{¿loft.P2¡}{¿loft.F2¡} = ¿loft.z¡\ \text{Н/мм}; \]
+        необходимое (и полное) число рабочих витков
+        \[ n_1 = n = \frac{z_1}{z} = ¿loft.n¡;\]
+        длина пружины в свободном состоянии
+        \[ H_0 = (n_1 + 1)d = (¿loft.n¡ + 1)\cdot ¿spr.d¡= ¿loft.H0¡\ \text{мм}; \]
+        полная длина с крючками
+        \[ L' = H_0 + 2D = ¿loft.H0¡ + 2\cdot ¿spr.D¡ = ¿loft.L_dash¡\ \text{мм}. \]
+        Следовательно, конструктивные размеры выбраны верно.
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+    
+\end{document}
