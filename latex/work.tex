@@ -31,6 +31,7 @@
 % \renewcommand{\onlyinsubfile}[1]{}
 % \renewcommand{\notinsubfile}[1]{#1}
 \captionsetup[table]{name=Таблица}
+\captionsetup[figure]{name=Рисунок}
 
 \begin{table}[h]
     \begin{center}
@@ -345,6 +346,113 @@
         полная длина с крючками
         \[ L' = H_0 + 2D = ¿loft.H0¡ + 2\cdot ¿spr.D¡ = ¿loft.L_dash¡\ \text{мм}. \]
         Следовательно, конструктивные размеры выбраны верно.
+
+    \subsubsection{Расчёт валов}
+        Рассчитаем предпоследний вал на прочность. 
+        \begin{figure}[h]
+            \center{\includegraphics[width=0.7\linewidth]{shaft_schema.png}}
+            \caption{Схема вала 4 с приложенными силами}
+        \end{figure}
+        Найдём необходимые силы (с учётом \( M_4 = ¿shaft.M¡ \)):
+        \[ F_{\text{окр1}} \frac{M_4}{0.5d_1} = ¿shaft.F_circ1¡\ H,\]
+        \[ F_{\text{окр2}} \frac{M_4}{0.5d_2} = ¿shaft.F_circ2¡\ H,\]
+        \[ F_{r1} = F_{\text{окр1}}\cdot tan(20^\cdot) = ¿shaft.F_r1¡\ H,\]
+        \[ F_{r2} = F_{\text{окр2}}\cdot tan(20^\cdot) = ¿shaft.F_r2¡\ H,\]
+
+        Найдём реакции в опорах.\par
+        \begin{figure}[h]
+            \center{\includegraphics[width=0.8\linewidth]{sh_yoz.png}}
+            \caption{Схема балки в плоскости YOZ}
+        \end{figure}
+        \[ \sum M_A = 0 \]
+        \[ F_{r_1}\cdot 6 - 15\cdot F_{r_2} + 27\cdot R_{B_y} = 0\]
+        \[ R_{B_y} = ¿shaft.R_B_y¡\ H\]
+        \[ \sum_{i}^{}F_i = 0 \]
+        \[ R_{A_y} + F_{r_1} + R_{B_y} = F_{r_2} \]
+        \[ R_{A_y} = ¿shaft.R_A_y¡\ H\]        
+        
+        \begin{figure}[h]
+            \center{\includegraphics[width=0.8\linewidth]{sh_xoz.png}}
+            \caption{Схема балки в плоскости XOZ}
+        \end{figure}
+        \[ \sum M_A = 0 \]
+        \[ R_{B_x} = \frac{15\cdot F_{\text{окр2}} + 6\cdot F_{\text{окр1}}}{27} = ¿shaft.R_B_x¡\ H\]
+        
+        \[ R_{A_x} = F_{\text{окр2}} + F_{\text{окр1}} - R_{B_x} = ¿shaft.R_A_x¡\ H\]
+
+        Представим эпюры рассчитанных моментов:
+ 
+        \begin{figure}[!h]
+            \center{\includegraphics[width=0.8\linewidth]{epure_yoz.png}}
+            \caption{Эпюра изгибающего момента в плоскости YOZ}
+        \end{figure}
+
+        \begin{figure}[h]
+            \center{\includegraphics[width=0.8\linewidth]{epure_xoz.png}}
+            \caption{Эпюра изгибающего момента в плоскости XOZ}
+        \end{figure}
+        \begin{figure}[h]
+            \center{\includegraphics[width=0.8\linewidth]{epure_circ.png}}
+            \caption{Эпюра крутящего момента}
+        \end{figure}
+
+        Учтя, что на вал действуют одноврененно и изгибающий, и крутящий моменты,
+        проведём расчет на прочность через приведенный момент в опасном сечении.
+        По эпюрам очевидно, что это сечение находится на месте крепления шестерни
+        (зубчатого колеса №9).
+
+        \[ M^{\sum}_\text{изг} = \sqrt{M_x^2 + M_y^2} = \sqrt{¿shaft.Mkx¡^2 + ¿shaft.Mky¡^2} = ¿shaft.Msum_izg¡\ \text{Нмм}\]
+        \[ M_\text{прив.} = \sqrt{{M^{\sum}_\text{изг}}^2 + 0,75M_\text{кр}^2} = ¿shaft.M_pr¡\ \text{Нмм}\]
+
+        Расчёт минимального диаметра вала проведём по формуле:
+        \[ d\geq \sqrt[3]{\frac{M_\text{пр}}{0,1[\sigma_u]}}, \]
+        где \( [\sigma_u] \) - допускаемое изгибающее напряжение, вычисляется как
+         \( [\sigma_u] = 0,1[\sigma_b] \).\par
+        Материалом выберем сталь 40Х, параметры которой приведены в таблице \ref{tab:gear_materials}.\par
+
+        \[ d\geq \sqrt[3]{\frac{¿shaft.M_pr¡}{0,1\cdot 0,1 ¿material.s.sigma_b¡}} = ¿shaft.d_min¡\ \text{мм} \]
+        Принимаем минимальный диаметр ближайшим сверху из стандартных диаметров, равным
+        \( d_{\text{мин}} = 3\ \text{мм} \), который при этом вполне подходит по конструктивным
+        соображениям. Такой диаметр будет у вала в местах крепления к подшипникам.
+
+    \subsubsection{Расчёт опор}
+        Подберём опоры для валов. Выберем опоры качения, а именно - радиальные подшипники,
+        так как нагрузка на валы только радиальная.\par
+        Применем формулу для расчёта динамической грузоподьемности:
+        \[ C_0 = 0,01P\sqrt[3]{60nT}, \]
+        где n - частота вращения рассчитываемого вала (4й), P - эквивалентная
+        динамическая нагрузка.\par
+        Рассчитаем P по формуле:
+        \[ P = (XF_r + YF_a)k_\sigma k_\tau = ¿shaft.P¡, \]
+        где (X, Y) = (1, 0) - коэффициенты, учитывающие направление нагрузки,\par
+            \( k_\sigma = 1 \) - коэффициент безопасности,\par
+            \( k_\tau=1,2 \) - коэффициент температуры.\par
+        Получаем
+        \[ C_0 = 0,01\cdot ¿shaft.P¡ \cdot \sqrt[3]{60\cdot ¿shaft.n¡}\cdot 3000 = ¿shaft.Cp¡\ H \]
+
+        На основе полученного значения выберем подшипник "¿podsh.name¡" со следующими
+        параметрами:
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}p{0.13\linewidth}}
+                    \hline
+                    d, \( \text{мм} \) & D, \( \text{мм} \) & B, \( \text{мм} \) & r, \( \text{мм} \) & C, Н & \( C_0 \), Н \\
+                    \hline
+                    ¿podsh.d¡ & ¿podsh.D¡ & ¿podsh.B¡ & ¿podsh.r¡ & ¿podsh.C¡ & ¿podsh.C0¡ \\
+                    \hline
+                \end{tabular}
+                \caption{{Характеристики основного подшипника}}\label{tab:podsh}
+            \end{center}
+        \end{table}
+        
+
+        
+        
+        
+        
+        
+        
+        
         
 
         

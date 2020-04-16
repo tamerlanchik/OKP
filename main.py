@@ -1,6 +1,6 @@
 import calc_job
 from latex_storage import Storage
-from input import loft_wheel, engine, materials, Ybm
+from input import loft_wheel, engine, materials, Ybm, podsh_mini
 
 def dump_data(storage, filename):
     storage.put(M_load=calc_job.Mout, N_min=calc_job.minEngineN)
@@ -40,6 +40,13 @@ def dump_data(storage, filename):
     storage.put(**dict(
         ('material.g.%s' % key, value) for key, value in materials['gear'].items()
     ))
+    storage.put(**dict(
+        ('material.s.%s' % key, value) for key, value in materials['shaft'].items()
+    ))
+    storage.put(**dict(
+        ('podsh.%s' % key, value) for key, value in podsh_mini.items()
+    ))
+
     storage.put(Yb=Ybm)
     storage.export(filename)
 
