@@ -1,4 +1,5 @@
 import os
+from decimal import Decimal
 
 
 class Storage(object):
@@ -13,8 +14,8 @@ class Storage(object):
             if isinstance(value, float):
                 # value = round(value, 2)
                 temp = value - int(value)
-                value = int(value) + float('{:g}'.format(float('{:.{p}g}'.format(temp, p=2))))
-            self._put(key, value)
+                value = int(value) + Decimal('{:g}'.format(Decimal('{:.{p}g}'.format(temp, p=2))))
+            self._put(key, str(value))
 
     def pop(self, key):
         return self._map.pop(key, None)

@@ -25,9 +25,13 @@ def CalculateGearRatios(i0):
 def CalculateToothCount(iList, baseZ):
     Z = []
     for j in range(len(baseZ)):
-        z1 = baseZ[j] * iList[j]
-        Z.append(baseZ[j])
-        Z.append(z1)
+        z_calc = baseZ[j] * iList[j]
+        z_min = z_total[0][j]
+        z_max = z_total[1][j]
+        assert abs(z_calc - z_max)/z_calc < 0.1
+        assert abs(baseZ[j] - z_min) / baseZ[j] < 0.05
+        Z.append(z_min)
+        Z.append(z_max)
     return Z
 
 

@@ -1,27 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  15 APR 2020 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  1 MAY 2020 20:50
 entering extended mode
 **/home/andrey/Documents/OKP/latex/work.tex
 (/home/andrey/Documents/OKP/latex/work.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrartcl.cls
+L3 programming layer <2020-03-06> (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
 (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
-basics and keyval usage)
-
-(/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
+Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
-)))
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
+))) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
 \scr@dte@tocline@numbox=\box45
@@ -50,12 +43,10 @@ Class scrartcl Warning: deprecated option `enabledeprecatedfontcommands'.
 (scrartcl)              longer. Therefore usage of this class option also
 (scrartcl)              is not recommended.
 
-Class scrartcl Info: File `size14.clo' used to setup font sizes on input line 2
-212.
+Class scrartcl Info: File `size14.clo' used to setup font sizes on input line 2212.
 (/home/andrey/.miktex/texmfs/install/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
 Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
 \ta@bcor=\skip48
 \ta@div=\count167
@@ -149,16 +140,13 @@ Class scrartcl Info: Redefining `\numberline' on input line 6178.
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-)
-(/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
+ (/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
-(/usr/local/share/miktex-texmf/tex/latex/base/t2aenc.dfu
+ (/usr/local/share/miktex-texmf/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -357,41 +345,32 @@ File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
 ))
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
-12.
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 112.
+ (/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
-(/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
+)) (/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
-
-(/usr/local/share/miktex-texmf/tex/generic/babel/switch.def
+ (/usr/local/share/miktex-texmf/tex/generic/babel/switch.def
 File: switch.def 2020/03/22 3.42 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
 (/usr/local/share/miktex-texmf/tex/latex/arabi/bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/babel-russian/russianb.ldf
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (/home/andrey/.miktex/texmfs/install/tex/latex/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
-
-(/usr/local/share/miktex-texmf/tex/generic/babel/babel.def
+ (/usr/local/share/miktex-texmf/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
 \babel@savecnt=\count176
 \U@D=\dimen135
-
-(/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
+ (/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count177
 )
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
-)
-(/usr/local/share/miktex-texmf/tex/latex/babel-english/english.ldf
+) (/usr/local/share/miktex-texmf/tex/latex/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -399,21 +378,16 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 108.
-))
-(/home/andrey/.miktex/texmfs/install/tex/latex/t2/mathtext.sty
+)) (/home/andrey/.miktex/texmfs/install/tex/latex/t2/mathtext.sty
 Package: mathtext 2018/04/13 v1.1 transparent text-and-math defs
 LaTeX Info: Redefining \halign on input line 119.
-)
-(/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty
+) (/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/t2/misccorr.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/t2/misccorr.sty
 Package: misccorr 1999/09/23 v0.1 misc corrections for russian typesetting
-
-(/usr/local/share/miktex-texmf/tex/latex/amsfonts/amssymb.sty
+ (/usr/local/share/miktex-texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/share/miktex-texmf/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/share/miktex-texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -421,40 +395,31 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/share/miktex-texmf/tex/latex/tools/enumerate.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
 \c@rlistctr=\count178
-)
-(/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
+ (/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
-(/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
+ (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
-)
-(/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+ (/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen138
@@ -469,14 +434,11 @@ Package caption Info: KOMA-Script document class detected.
 Package caption Info: KOMA-Script document class.
 \c@caption@flags=\count179
 \c@continuedfloat=\count180
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/fancybox/fancybox.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
@@ -505,8 +467,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              package `fancyhdr' on input line 22.
 
 (/home/andrey/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip63
 \f@nch@O@elh=\skip64
 \f@nch@O@erh=\skip65
@@ -516,25 +477,21 @@ s
 \f@nch@O@erf=\skip69
 \f@nch@O@olf=\skip70
 \f@nch@O@orf=\skip71
-)
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
+ (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen146
-))
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen147
-)
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count181
@@ -576,14 +533,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+ (/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -598,14 +552,11 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen161
 \Gm@layoutvoffset=\dimen162
 \Gm@dimlist=\toks29
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def
+ (/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count196
 \l__pdf_internal_box=\box51
-)
-(/home/andrey/Documents/OKP/latex/work.aux)
+) (/home/andrey/Documents/OKP/latex/work.aux)
 \openout1 = `work.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -627,8 +578,7 @@ LaTeX Font Info:    ... okay on input line 28.
 Package scrbase Info: activating english \contentsname on input line 28.
 Package scrbase Info: activating english \listfigurename on input line 28.
 Package scrbase Info: activating english \listtablename on input line 28.
-
-(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count197
 \scratchdimen=\dimen163
@@ -643,8 +593,7 @@ Package scrbase Info: activating english \listtablename on input line 28.
 \everyMPtoPDFconversion=\toks31
 ) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -686,105 +635,94 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
-
-
-(/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+ (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
-7.
-
-(/usr/local/share/miktex-texmf/tex/latex/base/omlcmr.fd
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 38.
+ (/usr/local/share/miktex-texmf/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OML/cmr/m/up' undefined
-(Font)              using `OML/cmr/m/it' instead on input line 37.
+(Font)              using `OML/cmr/m/it' instead on input line 38.
 
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <14.4> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OML/cmr/m/up' in size <7> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
-7.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 38.
 (/usr/local/share/miktex-texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `OMS/cmr/m/up' undefined
-(Font)              using `OMS/cmr/m/n' instead on input line 37.
+(Font)              using `OMS/cmr/m/n' instead on input line 38.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OMS/cmr/m/up' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 37--41
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 38--42
  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-43.
+LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 44.
 (/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 []\T2A/cmr/m/n/14.4 ПТП или ППМЛ -
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 64--66
+Underfull \hbox (badness 4416) in paragraph at lines 65--67
 \T2A/cmr/m/n/14.4 выбирается самостоятельно
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T2A/cmr/m/n/14.4 с соответствующим
  []
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 49--70
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 50--71
  [] 
  []
 
 
-Overfull \hbox (2.80342pt too wide) in paragraph at lines 45--73
-[]\T2A/cmr/m/n/14.4 Разработать конструкцию привода следящей системы по предлож
-енной
+Overfull \hbox (2.80342pt too wide) in paragraph at lines 46--74
+[]\T2A/cmr/m/n/14.4 Разработать конструкцию привода следящей системы по предложенной
  []
 
 
-Overfull \hbox (2.73537pt too wide) in paragraph at lines 83--85
-\T2A/cmr/m/n/14.4 Затем вычислим минимально возможную мощность двигателя, испол
-ьзуя
+Overfull \hbox (2.73537pt too wide) in paragraph at lines 84--86
+\T2A/cmr/m/n/14.4 Затем вычислим минимально возможную мощность двигателя, используя
  []
 
 
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 87.
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 88.
 
 
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 87.
-
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 88.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 87.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 88.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 87.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 88.
 
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 92--107
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 93--108
  [] 
  []
 
@@ -792,29 +730,2095 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 92--107
 
 {/home/andrey/.miktex/texmfs/data/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 118
-.
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 118
-.
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 118.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 118.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 118
-.
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 118
-.
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 118.
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 119.
 
 
-LaTeX Warning: Command \textexclamdown invalid in math mode on input line 11
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 119.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 124.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 124.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 124.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 124.
+
+/home/andrey/Documents/OKP/latex/work.tex:125: Missing $ inserted.
+<inserted text> 
+                $
+l.125 ...СѓРєС‚РѕСЂ Р±СѓРґРµС‚ РёРјРµС‚СЊ Вїgears_
+                                                  nВЎ СЃС‚СѓРїРµРЅРµР№.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyru invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 125.
+
+
+LaTeX Warning: Command \cyrishrt invalid in math mode on input line 125.
+
+/home/andrey/Documents/OKP/latex/work.tex:126: Missing $ inserted.
+<inserted text> 
+                $
+l.126 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no с in font cmr12!
+Missing character: There is no т in font cmr12!
+Missing character: There is no у in font cmr12!
+Missing character: There is no п in font cmr12!
+Missing character: There is no е in font cmr12!
+Missing character: There is no н in font cmr12!
+Missing character: There is no е in font cmr12!
+Missing character: There is no й in font cmr12!
+
+Overfull \hbox (9.14311pt too wide) in paragraph at lines 128--132
+\T2A/cmr/m/n/14.4 момента инерции. Сперва вычислим среднее геометрические передаточное
+ []
+
+[2]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 132.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 134.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 134.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 134.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 134.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 135.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 135.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 135.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 135.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 136.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 137.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 137.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 137.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 137.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 138.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 138.
+
+
+Overfull \hbox (20.68773pt too wide) in paragraph at lines 141--145
+[]\T2A/cmr/m/n/14.4 Для подбора числа зубьев для шестерней имеет смысл брать минимальные
+ []
+
+
+Overfull \hbox (12.22246pt too wide) in paragraph at lines 141--145
+\T2A/cmr/m/n/14.4 из стандартного ряда, однако в процессе разработки конструкции делаются
+ []
+
+
+Overfull \hbox (9.65825pt too wide) in paragraph at lines 141--145
+\T2A/cmr/m/n/14.4 поправки исходя из необходимых минимальных расстояний между валами.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\T2A/cmr/m/n/14.4 Номер
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 175.
+
+
+Overfull \hbox (2.22345pt too wide) in paragraph at lines 180--182
+[]\T2A/cmr/m/n/14.4 Для расчјта дальнейших параметров зубчатых колјс необходимо найти
+ []
+
+[3]
+Overfull \hbox (33.91399pt too wide) in paragraph at lines 187--200
+[]\T2A/cmr/m/n/14.4 По итогам вычислений получаем следующий результат ($\OML/cmm/m/it/14.4 M[]$ \T2A/cmr/m/n/14.4 - вал двигателя):
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 201.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 201.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 201.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 201.
+
+
+Overfull \hbox (22.19841pt too wide) in paragraph at lines 205--208
+[]\T2A/cmr/m/n/14.4 Модуль зацепления берјтся по результатам расчјтов зубьев на контактную
+ []
+
+
+Overfull \hbox (37.06538pt too wide) in paragraph at lines 205--208
+\T2A/cmr/m/n/14.4 наиболее нагруженной ступени в целях сокращения математических выкладок.
+ []
+
+[4]
+Overfull \hbox (17.27249pt too wide) in paragraph at lines 214--214
+[]$\OML/cmm/m/it/14.4  []$ \T2A/cmr/m/n/14.4 - коэффициент формы зубчатого венца, для мелкомодульных передач
+ []
+
+
+Overfull \hbox (15.46964pt too wide) in paragraph at lines 224--224
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.name\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (18.5187pt too wide) in paragraph at lines 224--225
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.name\OT1/cmr/m/n/14.4 !`| 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:225: Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...sigma_b \), РњРџР°  & Вїmaterial.g.sigma_
+                                                  bВЎ & Вїmaterial.w.sigma_b...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 225.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 225.
+
+/home/andrey/Documents/OKP/latex/work.tex:225: Missing $ inserted.
+<inserted text> 
+                $
+l.225 ..._b \), РњРџР°  & Вїmaterial.g.sigma_bВЎ &
+                                                   Вїmaterial.w.sigma_bВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (26.53404pt too wide) in paragraph at lines 225--225
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.sigma$[][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:225: Missing $ inserted.
+<inserted text> 
+                $
+l.225 ...aterial.g.sigma_bВЎ & Вїmaterial.w.sigma_
+                                                  bВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 225.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 225.
+
+/home/andrey/Documents/OKP/latex/work.tex:226: Missing $ inserted.
+<inserted text> 
+                $
+l.226                     Р
+                           џСЂРµРґРµР» С‚РµРєСѓС‡РµСЃС‚Рё \( \sigma_t \), Рњ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (29.58311pt too wide) in paragraph at lines 225--226
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.sigma$[][][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:226: Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...gma_t \), РњРџР°  &   Вїmaterial.g.sigma_
+                                                  tВЎ & Вїmaterial.w.sigma_t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 226.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 226.
+
+/home/andrey/Documents/OKP/latex/work.tex:226: Missing $ inserted.
+<inserted text> 
+                $
+l.226 ... \), РњРџР°  &   Вїmaterial.g.sigma_tВЎ &
+                                                   Вїmaterial.w.sigma_tВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (25.8535pt too wide) in paragraph at lines 226--226
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.sigma$[][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:226: Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...aterial.g.sigma_tВЎ & Вїmaterial.w.sigma_
+                                                  tВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 226.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 226.
+
+/home/andrey/Documents/OKP/latex/work.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227                     Р
+                           џСЂРµРґРµР» РІС‹РЅРѕСЃР»РёРІРѕСЃС‚Рё \( \sigma_{-...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (28.90257pt too wide) in paragraph at lines 226--227
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.sigma$[][][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...ma_{-1} \), РњРџР°  & Вїmaterial.g.sigma_
+                                                  1ВЎ & Вїmaterial.w.sigma_1...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 227.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 227.
+
+/home/andrey/Documents/OKP/latex/work.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...1} \), РњРџР°  & Вїmaterial.g.sigma_1ВЎ &
+                                                   Вїmaterial.w.sigma_1ВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (27.2424pt too wide) in paragraph at lines 227--227
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.sigma$[][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:227: Missing $ inserted.
+<inserted text> 
+                $
+l.227 ...aterial.g.sigma_1ВЎ & Вїmaterial.w.sigma_
+                                                  1ВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 227.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 227.
+
+/home/andrey/Documents/OKP/latex/work.tex:228: Missing $ inserted.
+<inserted text> 
+                $
+l.228                     *
+                           РР·РіРёР±РЅРѕРµ РЅР°РїСЂСЏР¶РµРЅРёРµ \( [\sigma_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.29147pt too wide) in paragraph at lines 227--228
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.sigma$[][][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:228: Missing $ inserted.
+<inserted text> 
+                $
+l.228 ...sigma_f] \), РњРџР° & Вїmaterial.g.sigma_
+                                                  fВЎ & Вїmaterial.w.sigma_f...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+
+/home/andrey/Documents/OKP/latex/work.tex:228: Missing $ inserted.
+<inserted text> 
+                $
+l.228 ..._f] \), РњРџР° & Вїmaterial.g.sigma_fВЎ &
+                                                   Вїmaterial.w.sigma_fВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (28.21465pt too wide) in paragraph at lines 228--228
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.sigma$[][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:228: Missing $ inserted.
+<inserted text> 
+                $
+l.228 ...aterial.g.sigma_fВЎ & Вїmaterial.w.sigma_
+                                                  fВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 228.
+
+/home/andrey/Documents/OKP/latex/work.tex:229: Missing $ inserted.
+<inserted text> 
+                $
+l.229                     *
+                           РљРѕРЅС‚Р°РєС‚РЅРѕРµ РЅР°РїСЂСЏР¶РµРЅРёРµ \( \sig...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (31.26372pt too wide) in paragraph at lines 228--229
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.sigma$[][][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:229: Missing $ inserted.
+<inserted text> 
+                $
+l.229 ...\sigma_H \), РњРџР° & Вїmaterial.g.sigma_
+                                                  HВЎ & Вїmaterial.w.sigma_H...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 229.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 229.
+
+/home/andrey/Documents/OKP/latex/work.tex:229: Missing $ inserted.
+<inserted text> 
+                $
+l.229 ...a_H \), РњРџР° & Вїmaterial.g.sigma_HВЎ &
+                                                   Вїmaterial.w.sigma_HВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (31.36736pt too wide) in paragraph at lines 229--229
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.g.sigma$[][]|$ 
+ []
+
+/home/andrey/Documents/OKP/latex/work.tex:229: Missing $ inserted.
+<inserted text> 
+                $
+l.229 ...aterial.g.sigma_HВЎ & Вїmaterial.w.sigma_
+                                                  HВЎ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 229.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 229.
+
+/home/andrey/Documents/OKP/latex/work.tex:230: Missing $ inserted.
+<inserted text> 
+                $
+l.230                     \hline
+                                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (34.41643pt too wide) in paragraph at lines 229--230
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 material.w.sigma$[][][]|$ 
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 250.
+
+
+Overfull \hbox (38.21045pt too wide) detected at line 250
+[] \OT1/cmr/m/n/14.4 = [] = []\OML/cmm/m/it/14.4 gear:=:\OT1/cmr/m/n/14.4 5[]
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 252.
+
+
+Overfull \hbox (50.41118pt too wide) detected at line 252
+[] \OT1/cmr/m/n/14.4 = [] = []\OML/cmm/m/it/14.4 wheel:=:\OT1/cmr/m/n/14.4 5[]
+ []
+
+
+Overfull \hbox (24.0pt too wide) in paragraph at lines 247--254
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+/home/andrey/Documents/OKP/latex/work.tex:257: Missing $ inserted.
+<inserted text> 
+                $
+l.257         РЎС‡РёС‚Р°РµРј РїРѕ ВїYF_
+                                       choose5ВЎ. Р—Р°РґР°С‘Рј \( K=1,3;\ \p...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \CYRZ invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \cyryo invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 257.
+
+
+/home/andrey/Documents/OKP/latex/work.tex:257: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.257 ...РµРј РїРѕ ВїYF_choose5ВЎ. Р—Р°РґР°С‘Рј \(
+                                                   K=1,3;\ \psi_{bm}=ВїYbВЎ \):
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 257.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 257.
+
+Missing character: There is no З in font cmr12!
+Missing character: There is no а in font cmr12!
+Missing character: There is no д in font cmr12!
+Missing character: There is no а in font cmr12!
+Missing character: There is no ј in font cmr12!
+Missing character: There is no м in font cmr12!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 258.
+
+
+Overfull \hbox (45.05273pt too wide) in paragraph at lines 260--263
+[]\T2A/cmr/m/n/14.4 Примем в качестве минимального момента ближайший табличный \OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.1.m\OT1/cmr/m/n/14.4 !`\T2A/cmr/m/n/14.4 .
+ []
+
+
+Overfull \hbox (53.49425pt too wide) in paragraph at lines 260--263
+\T2A/cmr/m/n/14.4 Можно назначить его всем зубчатым колесам. Однако в процессе проектирования
+ []
+
+
+Overfull \hbox (37.43968pt too wide) in paragraph at lines 260--263
+\T2A/cmr/m/n/14.4 пришлось увеличить модуль некоторых пар зубчатых колес в целях увеличения
+ []
+
+[5]
+Overfull \hbox (8.88622pt too wide) in paragraph at lines 267--269
+[]\T2A/cmr/m/n/14.4 В этом пункте окончательно посчитаем оставшиеся параметры зубчатых
+ []
+
+
+Overfull \hbox (22.49251pt too wide) in paragraph at lines 275--276
+[]\T2A/cmr/m/n/14.4 Диаметры окружностей вершин $\OML/cmm/m/it/14.4 d[]$\T2A/cmr/m/n/14.4 и впадин $\OML/cmm/m/it/14.4 d[]$\T2A/cmr/m/n/14.4 вычисляются по следующим
+ []
+
+
+Overfull \hbox (19.93918pt too wide) in paragraph at lines 280--281
+[]\T2A/cmr/m/n/14.4 Для получения ширины колеса и межосевого расстояния служат формулы 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.1.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.2.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.4.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.5.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.8.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.7.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.8.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (27.51901pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.9.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (34.37253pt too wide) in paragraph at lines 291--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.10.z\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.1.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.4.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.5.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.6.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.7.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.8.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (29.04356pt too wide) in paragraph at lines 292--292
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.9.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 292--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.10.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.1.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.2.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.4.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.5.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.6.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.7.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.8.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--293
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.9.da\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (35.89708pt too wide) in paragraph at lines 293--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.10.d\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.1.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.3.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.4.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.5.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.6.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.7.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.8.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (33.22914pt too wide) in paragraph at lines 294--294
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.9.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (40.08266pt too wide) in paragraph at lines 294--295
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 gears.10.df\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (36.38165pt too wide) in paragraph at lines 287--300
+ [] 
+ []
+
+
+Overfull \hbox (10.04355pt too wide) in paragraph at lines 283--303
+[]\T2A/cmr/m/n/14.4 Приведјм сводную таблицу с полными необходимыми характеристиками
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
+Overfull \hbox (8.0388pt too wide) in paragraph at lines 315--315
+[]\T2A/cmr/m/n/14.4 где| 
+ []
+
+
+Overfull \hbox (5.73103pt too wide) in paragraph at lines 315--315
+[]\T2A/cmr/m/n/14.4 A| 
+ []
+
+
+Overfull \hbox (3.06586pt too wide) in paragraph at lines 316--316
+[]\T2A/cmr/m/n/14.4 n| 
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 316--317
+[]\T2A/cmr/m/n/14.4 - число зубьев, на которое производится взаимное
+ []
+
+
+Overfull \hbox (4.0173pt too wide) in paragraph at lines 317--317
+[]\T2A/cmr/m/n/14.4 L| 
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 323.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 323.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 323.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 323.
+
+
+Overfull \hbox (14.64032pt too wide) in paragraph at lines 322--324
+[]\T2A/cmr/m/n/14.4 Приняв L=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.L\OT1/cmr/m/n/14.4 !`\T2A/cmr/m/n/14.4 мм, A=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 loftwheel.A\OT1/cmr/m/n/14.4 !`\T2A/cmr/m/n/14.4 мм, n=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 loftwheel.n\OT1/cmr/m/n/14.4 !`\T2A/cmr/m/n/14.4 , z=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 loftwheel.z\OT1/cmr/m/n/14.4 !`\T2A/cmr/m/n/14.4 ,
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 325.
+
+
+Overfull \hbox (71.30457pt too wide) detected at line 325
+\OML/cmm/m/it/14.4 P[] \OT1/cmr/m/n/14.4 = [] = []\OML/cmm/m/it/14.4 loft:P\OT1/cmr/m/n/14.4 2[] \OML/cmm/m/it/14.4 H
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 328.
+
+
+Overfull \hbox (37.67722pt too wide) in paragraph at lines 330--334
+\T2A/cmr/m/n/14.4 склоняясь к более коротким и жјстким. Наш выбор: \OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.name\OT1/cmr/m/n/14.4 !` \T2A/cmr/m/n/14.4 с параметрами:
+ []
+
+
+Overfull \hbox (9.20457pt too wide) in paragraph at lines 330--334
+\OML/cmm/m/it/14.4 P[]$ \T2A/cmr/m/n/14.4 = \OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.P3\OT1/cmr/m/n/14.4 !` \T2A/cmr/m/n/14.4 Н, d=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.d\OT1/cmr/m/n/14.4 !` \T2A/cmr/m/n/14.4 мм, D=\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.z1\OT1/cmr/m/n/14.4 !` \T2A/cmr/m/n/14.4 мм, $\OML/cmm/m/it/14.4 z[]$\T2A/cmr/m/n/14.4 =\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.z1\OT1/cmr/m/n/14.4 !` \T2A/cmr/m/n/14.4 Н/мм, $\OML/cmm/m/it/14.4 f[]$\T2A/cmr/m/n/14.4 =\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 spr.f3\OT1/cmr/m/n/14.4 !`
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 338.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 338.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 338.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 338.
+
+[7]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 341.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 343.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 347.
+
+<shaft_schema.png, id=39, 481.8pt x 304.13625pt>
+File: shaft_schema.png Graphic file (type png)
+<use shaft_schema.png>
+Package pdftex.def Info: shaft_schema.png  used on input line 353.
+(pdftex.def)             Requested size: 318.66948pt x 201.16676pt.
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 356.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 356.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 356.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 356.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 357.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 357.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 357.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 357.
+
+[8 </home/andrey/Documents/OKP/latex/shaft_schema.png>]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 358.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 358.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 358.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 358.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 359.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 359.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 359.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 359.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 360.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 360.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 360.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 360.
+
+<sh_yoz.png, id=45, 595.47469pt x 216.05719pt>
+File: sh_yoz.png Graphic file (type png)
+<use sh_yoz.png>
+Package pdftex.def Info: sh_yoz.png  used on input line 364.
+(pdftex.def)             Requested size: 364.19667pt x 132.14084pt.
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 369.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 369.
+
+/home/andrey/Documents/OKP/latex/work.tex:369: Double subscript.
+l.369         \[ R_{B_y} = Вїshaft.R_B_
+                                       yВЎ\ H\]
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 369.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 369.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 372.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 372.
+
+/home/andrey/Documents/OKP/latex/work.tex:372: Double subscript.
+l.372         \[ R_{A_y} = Вїshaft.R_A_
+                                       yВЎ\ H\]
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 372.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 372.
+
+<sh_xoz.png, id=46, 595.47469pt x 216.05719pt>
+File: sh_xoz.png Graphic file (type png)
+<use sh_xoz.png>
+Package pdftex.def Info: sh_xoz.png  used on input line 375.
+(pdftex.def)             Requested size: 364.19667pt x 132.14084pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 379.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 379.
+
+/home/andrey/Documents/OKP/latex/work.tex:379: Double subscript.
+l.379 ...ot F_{\text{РѕРєСЂ1}}}{27} = Вїshaft.R_B_
+                                                  xВЎ\ H\]
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 379.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 379.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 381.
+
+/home/andrey/Documents/OKP/latex/work.tex:381: Double subscript.
+l.381 ...{\text{РѕРєСЂ1}} - R_{B_x} = Вїshaft.R_A_
+                                                  xВЎ\ H\]
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 381.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 381.
+
+<epure_yoz.png, id=47, 2806.485pt x 1580.90625pt>
+File: epure_yoz.png Graphic file (type png)
+<use epure_yoz.png>
+Package pdftex.def Info: epure_yoz.png  used on input line 386.
+(pdftex.def)             Requested size: 364.19667pt x 205.13907pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<epure_xoz.png, id=48, 2659.9375pt x 1009.7725pt>
+File: epure_xoz.png Graphic file (type png)
+<use epure_xoz.png>
+Package pdftex.def Info: epure_xoz.png  used on input line 391.
+(pdftex.def)             Requested size: 364.19667pt x 138.25479pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<epure_circ.png, id=49, 438.8897pt x 78.2925pt>
+File: epure_circ.png Graphic file (type png)
+<use epure_circ.png>
+Package pdftex.def Info: epure_circ.png  used on input line 395.
+(pdftex.def)             Requested size: 364.19667pt x 64.9696pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 </home/andrey/Documents/OKP/latex/sh_yoz.png>]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 404.
+
+
+Overfull \hbox (74.11136pt too wide) detected at line 404
+\OML/cmm/m/it/14.4 M[] \OT1/cmr/m/n/14.4 = [] = [] = []\OML/cmm/m/it/14.4 shaft:Msum[]zg[] []
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 405.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 405.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 405.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 405.
+
+[10 </home/andrey/Documents/OKP/latex/sh_xoz.png> </home/andrey/Documents/OKP/latex/epure_yoz.png>]
+
+LaTeX Warning: Reference `tab:gear_materials' on page 11 undefined on input line 411.
+
+
+Overfull \hbox (16.49948pt too wide) in paragraph at lines 411--411
+[]\T2A/cmr/m/n/14.4 Материалом выберем сталь 40Х, параметры которой приведены в таблице
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 413.
+
+
+Overfull \hbox (31.71281pt too wide) in paragraph at lines 419--420
+[]\T2A/cmr/m/n/14.4 Подберјм опоры для валов. Выберем опоры качения, а именно - радиальные
+ []
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 426.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 426.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 426.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 426.
+
+[11 </home/andrey/Documents/OKP/latex/epure_xoz.png> </home/andrey/Documents/OKP/latex/epure_circ.png>]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 431.
+
+
+Overfull \hbox (1.53658pt too wide) in paragraph at lines 441--441
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 podsh.D\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (0.77429pt too wide) in paragraph at lines 441--441
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 podsh.B\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (0.96625pt too wide) in paragraph at lines 441--441
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 podsh.C\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Overfull \hbox (7.81976pt too wide) in paragraph at lines 441--442
+[]\OT1/cmr/m/n/14.4 ?`\T2A/cmr/m/n/14.4 podsh.C0\OT1/cmr/m/n/14.4 !`| 
+ []
+
+
+Package lastpage Warning: Rerun to get the references right on input line 467.
+
+
+AED: lastpage setting LastPage
+[12] (/home/andrey/Documents/OKP/latex/work.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8612 strings out of 480932
+ 147201 string characters out of 2908752
+ 505275 words of memory out of 3000000
+ 24363 multiletter control sequences out of 15000+200000
+ 542327 words of font info for 44 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,15n,56p,10180b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lati1440.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1000.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1728.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx1440.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/lasx2074.pk> </home/andrey/.miktex/texmfs/data/fonts/pk/ljfour/lh/lh-t2a/dpi600/larm1440.pk></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on /home/andrey/Documents/OKP/latex/work.pdf (12 pages, 331158 bytes).
+PDF statistics:
+ 353 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
