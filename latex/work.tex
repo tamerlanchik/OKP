@@ -127,7 +127,7 @@
     \subsubsection{Определение передаточных отношений каждой ступени}
         Распределение будет производить исходя из критерия минимизации
         момента инерции.
-        Сперва вычислим среднее геометрические передаточное отношение:
+        Сперва вычислим среднее геометрические передаточное отношение [1]:
         \newcommand{\iavr}{i_{\text{ср}}}
          \[ \iavr = \sqrt[n]{i_0} = \sqrt[¿gears_n¡]{¿i0¡} = ¿i_avr¡ \]
         Затем рассчитаем непосредственно значения передаточного отношения для каждой ступени:
@@ -176,35 +176,35 @@
         
         Результат вполне удовлетворяет требования точности.
         
-    \subsubsection{Расчёт крутящих моментов}
+    \subsubsection{Приведение моментов к валам}
         Для расчёта дальнейших параметров зубчатых колёс необходимо найти крутящие моменты,
-        действующие на каждом из валов редуктора. Для этого воспользуемся формулой
+        действующие на каждом из валов редуктора. Для этого воспользуемся формулой [1]
         \[ M_p = \frac{M_q}{i_{p-q}\eta_{pq}\eta_n}, \]
         где \( M_p, M_q \) - моменты нагрузки на p-м и q-м валах,
             \( i_{p-q} \) - передаточное отношение между валами,
-            \( \eta_{pq},\ \eta_n \) - КПД передачи (для цилиндрической 0,98) и подшипников (0,99)\par
+            \( \eta_{pq},\ \eta_n \) - КПД зацепления (для цилиндрической 0,98) и подшипников (0,99)\par
         
         По итогам вычислений получаем следующий результат (\( M_0 \) - вал двигателя):
         \begin{table}[h!]
             \begin{center}
                 \begin{tabular}{p{0.2\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}}
                     \hline
-                    Номер вала, p & 0 & 1 & 2 & 3 & 4 & 5 \\
+                    Номер вала, p & I & II & III & IV & V & VI \\
                     \hline
-                    \( M_p \) & ¿M0¡ & ¿M1¡ & ¿M2¡ & ¿M3¡ & ¿M4¡ & ¿M5¡ \\
+                    \( M_p \), Нмм & ¿M0¡ & ¿M1¡ & ¿M2¡ & ¿M3¡ & ¿M4¡ & ¿M5¡ \\
                     \hline
                 \end{tabular}
                 \caption{Оценочные значения моментов на валах}\label{tab:moments__shaft_estimate}
             \end{center}
         \end{table}
 
-        Заметим, что \( M_0=¿M0¡ \), что в 2 раза больше значения номинального момента двигателя,
+        Заметим, что \( M_0=¿M0¡ \) Н, что в 2 раза меньше значения номинального момента двигателя ¿engine.Mn¡ Н,
         т.е. имеем большой запас по моменту двигателя.
 
     \subsubsection{Определение модуля зацепления}
         Модуль зацепления берётся по результатам расчётов зубьев на контактную и
         изгибную прочность. Расчёт на изгибную прочность проводится по наиболее нагруженной ступени в целях
-        сокращения математических выкладок. Основная его формула
+        сокращения математических выкладок. Основная его формула [1]
         \[ m \geq K_m\sqrt[3]{\frac{K\cdot M\cdot Y_F}{z\cdot\psi_{bm}\cdot[\sigma_F]}}, \]
         где m - ограничение снизу на искомый модуль,\par
             \( K_m \) - коэффициент, для прямозубых колес равный 1,4\par 
@@ -225,7 +225,7 @@
                     Предел прочности \( \sigma_b \), МПа  & ¿material.g.sigma_b¡ & ¿material.w.sigma_b¡ \\
                     Предел текучести \( \sigma_t \), МПа  &   ¿material.g.sigma_t¡ & ¿material.w.sigma_t¡ \\
                     Предел выносливости \( \sigma_{-1} \), МПа  & ¿material.g.sigma_1¡ & ¿material.w.sigma_1¡ \\
-                    *Изгибное напряжение \( [\sigma_f] \), МПа & ¿material.g.sigma_f¡ & ¿material.w.sigma_f¡ \\
+                    *Изгибное напряжение \( [\sigma_F] \), МПа & ¿material.g.sigma_f¡ & ¿material.w.sigma_f¡ \\
                     *Контактное напряжение \( \sigma_H \), МПа & ¿material.g.sigma_H¡ & ¿material.w.sigma_H¡ \\
                     \hline
                     \emph{*будет вычислено далее}
@@ -235,8 +235,8 @@
         \end{table}
 
         % \newpage
-        Допускаемое изгибное напряжение \( \sigma_f \) вычисляется по формуле 
-        \[ [\sigma_f] = \frac{\sigma_{-1}}{n}, \]
+        Допускаемое изгибное напряжение \( \sigma_F \) вычисляется по формуле [1] 
+        \[ [\sigma_F] = \frac{\sigma_{-1}}{n}, \]
         где \( n \) - запас прочности. Принимаем \( n=1,7 \).\par
         
         Модуль для пары колёс вычисляется по тому из двух, которое обладает
@@ -246,9 +246,9 @@
             \begin{center}
                 \begin{tabular}{p{0.5\linewidth}p{0.5\linewidth}}
                     Для шестерни:  &   Для колеса:\\
-                    \[ \frac{Y_F}{[\sigma_f]} = 
+                    \[ \frac{Y_F}{[\sigma_F]} = 
                         \frac{¿gear.yf.5¡}{¿material.g.sigma_f¡} = ¿gear./.5¡\] &
-                    \[ \frac{Y_F}{[\sigma_f]} = 
+                    \[ \frac{Y_F}{[\sigma_F]} = 
                     \frac{¿wheel.yf.5¡}{¿material.w.sigma_f¡} = ¿wheel./.5¡ \]\\                    
                 \end{tabular}
             \end{center}
@@ -257,7 +257,7 @@
         Считаем по ¿YF_choose5¡. Задаём \( K=1,3;\ \psi_{bm}=¿Yb¡ \):
         \[ m \geq 1,4\sqrt[3]{\frac{1,3\cdot ¿M5¡\cdot ¿yf.5¡}{¿z.5¡\cdot ¿Yb¡\cdot ¿sigma5¡}}=¿gear.5.minm¡ \]
         
-        Примем в качестве минимального момента ближайший табличный ¿gears.1.m¡. Можно назначить его
+        Примем в качестве минимального момента ближайший табличный ¿gears.1.m¡мм. Можно назначить его
         всем зубчатым колесам. Однако в процессе проектирования пришлось увеличить модуль некоторых
         пар зубчатых колес в целях увеличения их размера.
 
@@ -284,17 +284,17 @@
         Выберем материалы для колёс:
         \begin{table}[h!]
             \begin{center}
-                \begin{tabular}{p{0.04\linewidth}|p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}p{0.075\linewidth}}
+                \begin{tabular}{p{0.1\linewidth}|p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}}
                     \hline
                     №   & 1&2&3&4&5&6&7&8&9&10\\
                     \hline
-                    m & \multicolumn{2}{c}{¿gears.1.m¡} & \multicolumn{2}{c}{¿gears.3.m¡} & \multicolumn{2}{c}{¿gears.5.m¡} & \multicolumn{2}{c}{¿gears.7.m¡} & \multicolumn{2}{c}{¿gears.9.m¡} \\
-                    z & ¿gears.1.z¡ & ¿gears.2.z¡ & ¿gears.3.z¡ & ¿gears.4.z¡ & ¿gears.5.z¡ & ¿gears.8.z¡ & ¿gears.7.z¡ & ¿gears.8.z¡ & ¿gears.9.z¡ & ¿gears.10.z¡ \\
-                    d & ¿gears.1.d¡ & ¿gears.3.d¡ & ¿gears.3.d¡ & ¿gears.4.d¡ & ¿gears.5.d¡ & ¿gears.6.d¡ & ¿gears.7.d¡ & ¿gears.8.d¡ & ¿gears.9.d¡ & ¿gears.10.d¡ \\
-                    da & ¿gears.1.da¡ & ¿gears.2.da¡ & ¿gears.3.da¡ & ¿gears.4.da¡ & ¿gears.5.da¡ & ¿gears.6.da¡ & ¿gears.7.da¡ & ¿gears.8.da¡ & ¿gears.9.da¡ & ¿gears.10.d¡ \\
-                    df & ¿gears.1.df¡ & ¿gears.3.df¡ & ¿gears.3.df¡ & ¿gears.4.df¡ & ¿gears.5.df¡ & ¿gears.6.df¡ & ¿gears.7.df¡ & ¿gears.8.df¡ & ¿gears.9.df¡ & ¿gears.10.df¡ \\
-                    b & \multicolumn{2}{c}{¿gears.1.b¡} &  \multicolumn{2}{c}{¿gears.3.b¡} &  \multicolumn{2}{c}{¿gears.5.b¡} & \multicolumn{2}{c}{¿gears.7.b¡} &\multicolumn{2}{c}{¿gears.9.b¡} \\
-                    a & \multicolumn{2}{c}{¿gears.1.a¡} & \multicolumn{2}{c}{¿gears.3.a¡} & \multicolumn{2}{c}{¿gears.5.a¡} & \multicolumn{2}{c}{¿gears.7.a¡} & \multicolumn{2}{c}{¿gears.9.a¡} \\
+                    m, мм  & \multicolumn{2}{c}{¿gears.1.m¡} & \multicolumn{2}{c}{¿gears.3.m¡} & \multicolumn{2}{c}{¿gears.5.m¡} & \multicolumn{2}{c}{¿gears.7.m¡} & \multicolumn{2}{c}{¿gears.9.m¡} \\
+                    z       & ¿gears.1.z¡ &  ¿gears.2.z¡ &  ¿gears.3.z¡ &  ¿gears.4.z¡ &  ¿gears.5.z¡ & ¿gears.8.z¡ &   ¿gears.7.z¡ &  ¿gears.8.z¡ &  ¿gears.9.z¡ &  ¿gears.10.z¡ \\
+                    d, мм   & ¿gears.1.d¡ &  ¿gears.2.d¡ &  ¿gears.3.d¡ &  ¿gears.4.d¡ &  ¿gears.5.d¡ & ¿gears.6.d¡ &   ¿gears.7.d¡ &  ¿gears.8.d¡ &  ¿gears.9.d¡ &  ¿gears.10.d¡ \\
+                    da, мм  & ¿gears.1.da¡ & ¿gears.2.da¡ & ¿gears.3.da¡ & ¿gears.4.da¡ & ¿gears.5.da¡ & ¿gears.6.da¡ & ¿gears.7.da¡ & ¿gears.8.da¡ & ¿gears.9.da¡ & ¿gears.10.da¡ \\
+                    df, мм  & ¿gears.1.df¡ & ¿gears.3.df¡ & ¿gears.3.df¡ & ¿gears.4.df¡ & ¿gears.5.df¡ & ¿gears.6.df¡ & ¿gears.7.df¡ & ¿gears.8.df¡ & ¿gears.9.df¡ & ¿gears.10.df¡ \\
+                    b, мм & \multicolumn{2}{c}{¿gears.1.b¡} &  \multicolumn{2}{c}{¿gears.3.b¡} &  \multicolumn{2}{c}{¿gears.5.b¡} & \multicolumn{2}{c}{¿gears.7.b¡} &\multicolumn{2}{c}{¿gears.9.b¡} \\
+                    a, мм & \multicolumn{2}{c}{¿gears.1.a¡} & \multicolumn{2}{c}{¿gears.3.a¡} & \multicolumn{2}{c}{¿gears.5.a¡} & \multicolumn{2}{c}{¿gears.7.a¡} & \multicolumn{2}{c}{¿gears.9.a¡} \\
                     \hline
                 \end{tabular}
                 \caption{{Характеристики зубчатых колес}}\label{tab:gears_digest}
@@ -306,9 +306,9 @@
     \subsubsection{Расчёт пружины люфтовыбирающего колеса}
         Люфтовыбирающим колесом решено сделать выходное, под номером 10.
         Расчёт пружины ведётся по необходимому рабочему усилию, которое
-        вычисляется по формуле:
+        вычисляется по формуле [2]:
         \[ P_2 = \frac{\xi M_{\text{кр}}}{2(A\ cos\frac{180^\circ n}{z}
-                - \frac{L}{2}\ sin\frac{180^\circ n}{z}},\]
+                - \frac{L}{2}\ sin\frac{180^\circ n}{z})},\]
         \begin{table}[h!]
             \begin{center}
                 \begin{tabular}{p{0.025\linewidth}p{0.01\linewidth}p{0.8\linewidth}}
@@ -324,15 +324,15 @@
         \[ P_2 = \frac{¿loftwheel.xi¡\cdot¿loftwheel.M¡}{¿loftwheel.A¡\cdot cos\frac{180^\circ\cdot¿loftwheel.n¡}{¿loftwheel.z¡}
                 - \frac{¿spr.L¡}{2}\cdot sin\frac{180^\circ\cdot¿loftwheel.n¡}{¿loftwheel.z¡}} = ¿loft.P2¡\ H\]
         
-        Сила пружины при максимальной деформации:
+        Сила пружины при максимальной деформации [2]:
         \[ P_3 = \frac{P_2}{1-\delta} = \frac{¿loft.P2¡}{1-¿loftwheel.d¡} = ¿loft.P3¡\ H\]
 
         По найденному усилию по таблицам найдём подходящую пружину, склоняясь к более коротким
         и жёстким. Наш выбор: ¿spr.name¡ с параметрами: \( P_3 \) = ¿spr.P3¡ Н, d=¿spr.d¡ мм, 
-        D=¿spr.z1¡ мм, \( z_1 \)=¿spr.z1¡ Н/мм, \( f_3 \)=¿spr.f3¡ мм. Далее рассчитаем параметры
+        D=¿spr.D¡ мм, \( z_1 \)=¿spr.z1¡ Н/мм, \( f_3 \)=¿spr.f3¡ мм. Далее рассчитаем параметры
         пружины для нашего случая.
 
-        Определим величину деформации \( F_2 \)при нагрузке \( P_2 \). Если 
+        Определим величину деформации \( F_2 \) при нагрузке \( P_2 \). Если 
         \[ L_1 =  L\ cos\frac{180^\circ n}{z} + 2A\ sin\frac{180^\circ n}{z} = ¿loft.L1¡\ \text{мм},\]
         то 
         \[ F_2 = L_1 - L = ¿loft.F2¡\ \text{мм}.\]
@@ -343,6 +343,15 @@
         \[ n_1 = n = \frac{z_1}{z} = ¿loft.n¡;\]
         длина пружины в свободном состоянии
         \[ H_0 = (n_1 + 1)d = (¿loft.n¡ + 1)\cdot ¿spr.d¡= ¿loft.H0¡\ \text{мм}; \]
+        Длина развёрнутой пружины:
+        \begin{itemize}
+            \item приближённая формула:
+                \[ L\approx 3.2Dn_1 = ¿loft.Lapp¡\ \text{мм} \]
+            \item точная формула:
+                \[ L = \frac{\pi D_0 n}{cos(atan(\frac{d+0.3}{\pi D_0 }))} + \pi D_0 = ¿loft.L¡\ \text{мм};\]
+        \end{itemize}
+        % \[ L = \frac{\pi D_0 n}{cos(atan(\frac{d+0.3}{\pi D_0 }))} + \pi D_0 = ¿loft.L¡\ \text{мм};\]
+        
         полная длина с крючками
         \[ L' = H_0 + 2D = ¿loft.H0¡ + 2\cdot ¿spr.D¡ = ¿loft.L_dash¡\ \text{мм}. \]
         Следовательно, конструктивные размеры выбраны верно.
@@ -354,14 +363,14 @@
             \caption{Схема вала 4 с приложенными силами}
         \end{figure}
         Найдём необходимые силы (с учётом \( M_4 = ¿shaft.M¡ \)):
-        \[ F_{\text{окр1}} \frac{M_4}{0.5d_1} = ¿shaft.F_circ1¡\ H,\]
-        \[ F_{\text{окр2}} \frac{M_4}{0.5d_2} = ¿shaft.F_circ2¡\ H,\]
+        \[ F_{\text{окр1}} = \frac{M_4}{0.5d_1} = ¿shaft.F_circ1¡\ H,\]
+        \[ F_{\text{окр2}} = \frac{M_4}{0.5d_2} = ¿shaft.F_circ2¡\ H,\]
         \[ F_{r1} = F_{\text{окр1}}\cdot tan(20^\cdot) = ¿shaft.F_r1¡\ H,\]
         \[ F_{r2} = F_{\text{окр2}}\cdot tan(20^\cdot) = ¿shaft.F_r2¡\ H,\]
 
         Найдём реакции в опорах.\par
         \begin{figure}[h]
-            \center{\includegraphics[width=0.8\linewidth]{sh_yoz.png}}
+            \center{\includegraphics[width=0.8\linewidth]{sh_yoz_2.png}}
             \caption{Схема балки в плоскости YOZ}
         \end{figure}
         \[ \sum M_A = 0 \]
@@ -372,7 +381,7 @@
         \[ R_{A_y} = ¿shaft.R_A_y¡\ H\]        
         
         \begin{figure}[h]
-            \center{\includegraphics[width=0.8\linewidth]{sh_xoz.png}}
+            \center{\includegraphics[width=0.8\linewidth]{sh_xoz_2.png}}
             \caption{Схема балки в плоскости XOZ}
         \end{figure}
         \[ \sum M_A = 0 \]
@@ -404,7 +413,7 @@
         \[ M^{\sum}_\text{изг} = \sqrt{M_x^2 + M_y^2} = \sqrt{¿shaft.Mkx¡^2 + ¿shaft.Mky¡^2} = ¿shaft.Msum_izg¡\ \text{Нмм}\]
         \[ M_\text{прив.} = \sqrt{{M^{\sum}_\text{изг}}^2 + 0,75M_\text{кр}^2} = ¿shaft.M_pr¡\ \text{Нмм}\]
 
-        Расчёт минимального диаметра вала проведём по формуле:
+        Расчёт минимального диаметра вала проведём по формуле [1]:
         \[ d\geq \sqrt[3]{\frac{M_\text{пр}}{0,1[\sigma_u]}}, \]
         где \( [\sigma_u] \) - допускаемое изгибающее напряжение, вычисляется как
          \( [\sigma_u] = 0,1[\sigma_b] \).\par
@@ -415,21 +424,37 @@
         \( d_{\text{мин}} = 3\ \text{мм} \), который при этом вполне подходит по конструктивным
         соображениям. Такой диаметр будет у вала в местах крепления к подшипникам.
 
+    \subsubsection{Расчёт штифтов}
+        Расчитаем минимальный диаметр штифта. Для этого воспользуемся следующей формулой:
+        \[ d_\text{ш} \geq 2\sqrt{\frac{M}{\pi d [\tau_{\text{ср}}]}}, \]
+        где \( [\tau_{\text{ср}}] \) - допустимое напряжение на срез, МПа,\\
+        \( d \) - диаметр вала, мм,\\
+        \( M \) - крутящий момент на валу, Нмм.
+        Материалом для штифта примем Сталь50, для неё \( [\tau_{\text{ср}}] =75\) МПа.
+        Так как все валы в местах посадки зубчатых колёс имеют одинаковую толщину d=4мм, то рассчитаем
+        толщину штифта для наиболее нагруженного вала V.
+        \[ d_\text{ш} \geq 2\sqrt{\frac{¿M4¡}{\pi\cdot 4\cdot 75}} = 0,72\ \text{мм} \]
+        Округлив в большую сторону, примем диаметром штифтов \( d_\text{ш} = 1 \) мм.
+        
+
     \subsubsection{Расчёт опор}
         Подберём опоры для валов. Выберем опоры качения, а именно - радиальные подшипники,
         так как нагрузка на валы только радиальная.\par
-        Применем формулу для расчёта динамической грузоподьемности:
-        \[ C_0 = 0,01P\sqrt[3]{60nT}, \]
-        где n - частота вращения рассчитываемого вала (4й), P - эквивалентная
-        динамическая нагрузка.\par
-        Рассчитаем P по формуле:
-        \[ P = (XF_r + YF_a)k_\sigma k_\tau = ¿shaft.P¡, \]
+        Применем формулу для расчёта динамической грузоподьемности [1] (т.к. скорость вращения
+        больше 1 об/мин):
+        \[ C_P = 0,01P\sqrt[3]{60nL_h}, \]
+        где n - частота вращения рассчитываемого вала (IV), об/мин, \\P - эквивалентная
+        динамическая нагрузка,\\ \( L_h \) - время работы, ч.\par
+        Рассчитаем P по формуле [1]:
+        \[ P = (XF_r + YF_a)k_\sigma k_\tau = ¿shaft.P¡\ H, \]
         где (X, Y) = (1, 0) - коэффициенты, учитывающие направление нагрузки,\par
             \( k_\sigma = 1 \) - коэффициент безопасности,\par
-            \( k_\tau=1,2 \) - коэффициент температуры.\par
-        Получаем
-        \[ C_0 = 0,01\cdot ¿shaft.P¡ \cdot \sqrt[3]{60\cdot ¿shaft.n¡}\cdot 3000 = ¿shaft.Cp¡\ H \]
-
+            \( k_\tau=1,2 \) - коэффициент температуры,\par
+            \( F_r \) - радиальная нагрузка, \par
+            \( F_a \) - осевая нагрузка (равна 0).\par
+        Приняв n=218 об/мин, \( L_h \) = 3000ч, получаем
+        \[ C_P = 0,01\cdot ¿shaft.P¡ \cdot \sqrt[3]{60\cdot ¿shaft.n¡\cdot 3000} = ¿shaft.Cp¡\ H \]
+        \cite{Dorf}
         На основе полученного значения выберем подшипник "¿podsh.name¡" со следующими
         параметрами:
         \begin{table}[h!]
@@ -444,6 +469,8 @@
                 \caption{{Характеристики основного подшипника}}\label{tab:podsh}
             \end{center}
         \end{table}
+
+        Выберем такой подшипник для всех валов.
         
 
         
@@ -457,11 +484,14 @@
 
         
         
+\newpage
+        ferefr
+\renewcommand\refname{Список использованных источников}
+\addcontentsline{toc}{section}{4. Список использованных источников}
+\bibliographystyle{utf8gost705u}  %% стилевой файл для оформления по ГОСТу
+\bibliography{biblio}
         
-        
-        
-        
-        
-
+[1] Тищенко \par
+[2] Шарловский
     
 \end{document}

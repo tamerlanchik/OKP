@@ -1,6 +1,6 @@
 import tools
 from input import *
-from math import sqrt, log10, sin, cos, radians
+from math import sqrt, log10, sin, cos, radians, atan
 
 from latex_storage import Storage
 
@@ -238,12 +238,15 @@ def LoshSpringCalculation(Wh):
     H0 = (n1 + 1) * Sp['d']                                     # длина пружины в свободном состоянии
     L_dash = H0 + 2*Sp['D']                                     # полная длина пружины
     # TODO: в примере от Жуковой есть проверочный расчёт на d
+    alpha = atan((Sp['d']+0.3)/(3.14*Sp['D']))                  # угол подьема витков в свободом состояни
+    L = 3.14*Sp['D']*n/cos(alpha) + 3.14*Sp['D']                        # полная длина проволоки
+    Lapp = 3.2*n*Sp['D']
 
     tmpl = 'loft.%s'
     print(locals()['phi'])
     damp = locals()
     Storage().put(**dict((tmpl % name, damp[name]) for name in (
-        'phi', 'A1', 'P2', 'P3', 'L1', 'F2', 'z', 'n', 'n1', 'H0', 'L_dash'
+        'phi', 'A1', 'P2', 'P3', 'L1', 'F2', 'z', 'n', 'n1', 'H0', 'L_dash', 'L', 'Lapp'
     )))
     return P3, L_dash, H0
 
