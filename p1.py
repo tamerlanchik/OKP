@@ -167,6 +167,7 @@ def CalculateContactStrength(gears, materials, M):
     for i in range(len(gears)):
         z1, z2 = gears[i]['d'][0]['z'], gears[i]['d'][1]['z']
         m, i0, b = gears[i]['m'], gears[i]['i'], gears[i]['b']
+        m = 0.4
         a_w = (z1 + z2) * m / 2
 
         sigma_n = 108.5 * zk / (a_w * i0) * sqrt(
@@ -177,6 +178,8 @@ def CalculateContactStrength(gears, materials, M):
         Storage().put(**{
             tmpl % 'aw': a_w,
             tmpl % 'sigma_n': sigma_n,
+            tmpl % 'i': i0,
+            tmpl % 'b': b,
         })
 
         if sigma_n < sigma_H:

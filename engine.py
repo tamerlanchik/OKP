@@ -15,6 +15,7 @@ def CheckEngineWithMoments(engine, e_out, J_out, i0, xi):
     M_d_pr = e_out*i0 * (
         (1 + Km)*engine['Jr'] + J_out/(i0**2)
     ) * 10**3
+    Storage().put(M_d_pr=M_d_pr)
     if engine['Mn'] > M_d_pr*xi:
         return (True, M_d_pr, engine['Mn'])
     else:
