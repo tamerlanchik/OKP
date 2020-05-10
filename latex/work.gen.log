@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  5 MAY 2020 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  10 MAY 2020 17:22
 entering extended mode
 **/home/andrey/Documents/OKP/latex/work.gen.tex
 (/home/andrey/Documents/OKP/latex/work.gen.tex
@@ -605,7 +605,11 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count196
 \l__pdf_internal_box=\box51
 )
-(/home/andrey/Documents/OKP/latex/work.gen.aux)
+(/home/andrey/Documents/OKP/latex/work.gen.aux
+
+LaTeX Warning: Label `tab:gears_digest' multiply defined.
+
+)
 \openout1 = `work.gen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -627,8 +631,7 @@ LaTeX Font Info:    ... okay on input line 28.
 Package scrbase Info: activating english \contentsname on input line 28.
 Package scrbase Info: activating english \listfigurename on input line 28.
 Package scrbase Info: activating english \listtablename on input line 28.
-
-(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count197
 \scratchdimen=\dimen163
@@ -864,7 +867,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 262--269
 
 Overfull \hbox (13.848pt too wide) in paragraph at lines 275--277
 []\T2A/cmr/m/n/14.4 Примем в качестве минимального момента ближайший табличный 
-0.4мм.
+0.5мм.
  []
 
 
@@ -1035,22 +1038,85 @@ Overfull \hbox (34.53389pt too wide) in paragraph at lines 510--526
 дующими
  []
 
+
+Overfull \hbox (5.44344pt too wide) in paragraph at lines 532--536
+\T2A/cmr/m/n/14.4 часто применяемую для точных передач. Кроме того, приняв во в
+нимание
+ []
+
+
+Overfull \hbox (7.66252pt too wide) in paragraph at lines 532--536
+\T2A/cmr/m/n/14.4 окружные скорости колјс, возможное изменение размеров из-за к
+олебаний
+ []
+
 [14]
+Overfull \hbox (11.81657pt too wide) in paragraph at lines 542--544
+[]\T2A/cmr/m/n/14.4 Рассчитаем люфтовую погрешность. Она складывается из погреш
+ностей
+ []
+
+
+Overfull \hbox (39.67972pt too wide) in paragraph at lines 542--544
+\T2A/cmr/m/n/14.4 элементарных передач $\OT1/cmr/m/n/14.4 \OML/cmm/m/it/14.4 '
+[]$\T2A/cmr/m/n/14.4 , нормированных на соответствующее передаточное
+ []
+
+
+Overfull \hbox (71.993pt too wide) in paragraph at lines 556--563
+ [] 
+ []
+
+[15]
+Overfull \hbox (14.77483pt too wide) in paragraph at lines 584--584
+[] $\OML/cmm/m/it/14.4 F[]$ \T2A/cmr/m/n/14.4 - допуск на накопленную погрешнос
+ть шага зубчатого колеса,мкм; 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
+[]$\OML/cmm/m/it/14.4 F[]$\T2A/cmr/m/n/14.4 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+[]$\OML/cmm/m/it/14.4 F[]$\T2A/cmr/m/n/14.4 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--598
+[]$\OT1/cmr/m/n/14.4 \OML/cmm/m/it/14.4 '[];$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--598
+\T2A/cmr/m/n/14.4 угл.
+ []
+
+
+Overfull \hbox (40.98714pt too wide) in paragraph at lines 591--602
+ [] 
+ []
+
+[16] [17]
 No file work.gen.bbl.
 
 AED: lastpage setting LastPage
-[15] (/home/andrey/Documents/OKP/latex/work.gen.aux)
+[18] (/home/andrey/Documents/OKP/latex/work.gen.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
  8622 strings out of 480932
  147449 string characters out of 2908752
- 503306 words of memory out of 3000000
+ 503346 words of memory out of 3000000
  24370 multiletter control sequences out of 15000+200000
  542668 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1072,10 +1138,10 @@ ktex-texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-te
 xmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/andrey/Documents/OKP/latex/work.gen.pdf (15 pages, 3563
-87 bytes).
+Output written on /home/andrey/Documents/OKP/latex/work.gen.pdf (18 pages, 3663
+05 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
+ 386 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

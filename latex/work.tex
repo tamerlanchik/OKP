@@ -323,7 +323,7 @@
                     z       & ¿gears.1.z¡ &  ¿gears.2.z¡ &  ¿gears.3.z¡ &  ¿gears.4.z¡ &  ¿gears.5.z¡ & ¿gears.8.z¡ &   ¿gears.7.z¡ &  ¿gears.8.z¡ &  ¿gears.9.z¡ &  ¿gears.10.z¡ \\
                     d, мм   & ¿gears.1.d¡ &  ¿gears.2.d¡ &  ¿gears.3.d¡ &  ¿gears.4.d¡ &  ¿gears.5.d¡ & ¿gears.6.d¡ &   ¿gears.7.d¡ &  ¿gears.8.d¡ &  ¿gears.9.d¡ &  ¿gears.10.d¡ \\
                     da, мм  & ¿gears.1.da¡ & ¿gears.2.da¡ & ¿gears.3.da¡ & ¿gears.4.da¡ & ¿gears.5.da¡ & ¿gears.6.da¡ & ¿gears.7.da¡ & ¿gears.8.da¡ & ¿gears.9.da¡ & ¿gears.10.da¡ \\
-                    df, мм  & ¿gears.1.df¡ & ¿gears.3.df¡ & ¿gears.3.df¡ & ¿gears.4.df¡ & ¿gears.5.df¡ & ¿gears.6.df¡ & ¿gears.7.df¡ & ¿gears.8.df¡ & ¿gears.9.df¡ & ¿gears.10.df¡ \\
+                    df, мм  & ¿gears.1.df¡ & ¿gears.2.df¡ & ¿gears.3.df¡ & ¿gears.4.df¡ & ¿gears.5.df¡ & ¿gears.6.df¡ & ¿gears.7.df¡ & ¿gears.8.df¡ & ¿gears.9.df¡ & ¿gears.10.df¡ \\
                     b, мм & \multicolumn{2}{c}{¿gears.1.b¡} &  \multicolumn{2}{c}{¿gears.3.b¡} &  \multicolumn{2}{c}{¿gears.5.b¡} & \multicolumn{2}{c}{¿gears.7.b¡} &\multicolumn{2}{c}{¿gears.9.b¡} \\
                     a, мм & \multicolumn{2}{c}{¿gears.1.a¡} & \multicolumn{2}{c}{¿gears.3.a¡} & \multicolumn{2}{c}{¿gears.5.a¡} & \multicolumn{2}{c}{¿gears.7.a¡} & \multicolumn{2}{c}{¿gears.9.a¡} \\
                     \hline
@@ -525,6 +525,98 @@
         \end{table}
 
         Выберем такой подшипник для всех валов.
+
+    
+\subsection{Расчёт показателей точности кинематической схемы}
+    \subsubsection{Расчёт погрешности}
+        Для зубчатой передачи назначим 7-ю степень точности как 
+        наиболее часто применяемую для точных передач. Кроме того, приняв во 
+        внимание окружные скорости колёс, возможное изменение размеров
+        из-за колебаний температуры и прочие параметры, назначаем
+        для передач сопряжение F.\par
+
+        Общую погрешность передачи находят находят как сумму люфтовой и
+        кинематической погрешностей:
+        \[ \Delta\varphi_{\sum} = \Delta\varphi_{i0}  + \Delta\varphi_{\text{л}}\]
+        
+        Рассчитаем люфтовую погрешность. Она складывается из погрешностей
+        элементарных передач \( \Delta\varphi_{\text{л}i} \), нормированных
+        на соответствующее передаточное отношение. \par 
+
+        Значение погрешностей для цилиндрических передач определяют в
+         угловых минутах по формуле:
+         \[ \Delta\varphi_{\text{л}i} = 7,4\frac{j_{n-max}}{mz}, \]
+         где\par \qquad m - модуль колеса, мм;\par
+            \qquad\( z \) - число зубьев колеса\par
+            \qquad\( j_{n-max} \) - вероятный максимальный угловой зазор, мкм.\par
+        
+        С учётом типа сопряжения возьмём из ГОСТ 9178-81 значения \( j_{n-max} \)   :
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.15\linewidth}|p{0.17\linewidth}p{0.17\linewidth}p{0.17\linewidth}p{0.17\linewidth}p{0.17\linewidth}}
+                    \hline
+                    \( a_w \), мм & ¿gears.1.a¡ & ¿gears.3.a¡ & ¿gears.5.a¡ & ¿gears.7.a¡ & ¿gears.9.a¡ \\
+                    \hline
+                    \( j_{n max} \), мкм & 11 & 11 & 13 & 16 & 19 \\
+                    \hline
+                \end{tabular}
+            \end{center}
+        \end{table}
+
+        Вычислим погрешности:
+        \[ \Delta\varphi_{\text{л}12} = 7.4\frac{11}{¿gears.1.m¡\cdot ¿gears.1.z¡} = ¿acc.0.phi_L¡' \]
+        \[ \Delta\varphi_{\text{л}34} = 7.4\frac{11}{¿gears.3.m¡\cdot ¿gears.3.z¡} = ¿acc.1.phi_L¡' \]
+        \[ \Delta\varphi_{\text{л}56} = 7.4\frac{13}{¿gears.5.m¡\cdot ¿gears.5.z¡} = ¿acc.2.phi_L¡' \]
+        \[ \Delta\varphi_{\text{л}78} = 7.4\frac{16}{¿gears.7.m¡\cdot ¿gears.7.z¡} = ¿acc.3.phi_L¡' \]
+        \[ \Delta\varphi_{\text{л}9\ 10} = 7.4\frac{19}{¿gears.9.m¡\cdot ¿gears.9.z¡} = ¿acc.4.phi_L¡' \]
+        
+        Соответственно, люфтовая погрешность равна:
+        \[ \Delta\varphi_{\text{л}} = \sum_{k=1}^{5}\frac{\Delta\varphi_{\text{л}k}}{i_{k-n}} = ¿acc.phi_L¡'\]
+        
+        Рассчитаем кинематическую погрешность, приведённую к выходному валу. Она складывается из погрешностей
+        элементарных передач \( \Delta\varphi_{\text{i}k} \) по следующей формуле:
+        \[ \Delta\varphi_{i0} = \frac{\Delta\varphi_{i1}}{i_{1-(n+1)}} +  
+        \frac{\Delta\varphi_{i2}+\Delta\varphi_{i3}}{i_{2-(n+1)}} + ... + \Delta\varphi_{i2n} \]
+
+        Величина \( \Delta\varphi_{i} \) определяется по формуле:
+        \[ \Delta\varphi_{i} = 4.8\frac{F_p+F_f}{mz}, \]
+        где\par
+            \qquad\( F_p \) - допуск на накопленную погрешность шага зубчатого колеса,мкм;\par
+            \qquad\( F_f \) - допуск на погрешность профиля зуба, мкм;\par
+        
+        По ГОСТ 9178-81 найдём эти погрешности и рассчитаем погрешности:
+        
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.1\linewidth}|p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}p{0.07\linewidth}}
+                    \hline
+                    m, мм  & \multicolumn{2}{c}{¿gears.1.m¡} & \multicolumn{2}{c}{¿gears.3.m¡} & \multicolumn{2}{c}{¿gears.5.m¡} & \multicolumn{2}{c}{¿gears.7.m¡} & \multicolumn{2}{c}{¿gears.9.m¡} \\
+                    z       & ¿gears.1.z¡ &  ¿gears.2.z¡ &  ¿gears.3.z¡ &  ¿gears.4.z¡ &  ¿gears.5.z¡ & ¿gears.8.z¡ &   ¿gears.7.z¡ &  ¿gears.8.z¡ &  ¿gears.9.z¡ &  ¿gears.10.z¡ \\
+                    d, мм   & ¿gears.1.d¡ &  ¿gears.2.d¡ &  ¿gears.3.d¡ &  ¿gears.4.d¡ &  ¿gears.5.d¡ & ¿gears.6.d¡ &   ¿gears.7.d¡ &  ¿gears.8.d¡ &  ¿gears.9.d¡ &  ¿gears.10.d¡ \\
+                    \( F_P \), мкм & 22 & 24 & 22 & 24 & 22 & 30 & 22 & 35 & 26 & 42 \\
+                    \( F_f \), мкм & 9 & 9 & 9 & 9 & 9 & 9 & 9 & 9 & 10 & 10 \\
+                    \( \Delta\varphi_{i},  \) угл. мин. & ¿acc.1.phi_i¡ & ¿acc.2.phi_i¡ & ¿acc.3.phi_i¡ & ¿acc.4.phi_i¡ & ¿acc.5.phi_i¡ & ¿acc.6.phi_i¡ & ¿acc.7.phi_i¡ & ¿acc.8.phi_i¡ & ¿acc.9.phi_i¡ & ¿acc.10.phi_i¡ \\
+                    i  & \multicolumn{2}{c}{¿gears.1.i¡} & \multicolumn{2}{c}{¿gears.3.i¡} & \multicolumn{2}{c}{¿gears.5.i¡} & \multicolumn{2}{c}{¿gears.7.i¡} & \multicolumn{2}{c}{¿gears.9.i¡} \\
+                    \hline
+                \end{tabular}
+                \caption{{Характеристики зубчатых колес}}\label{tab:gears_digest}
+            \end{center}
+        \end{table}
+
+        Тогда общая кинематическая погрешность равна:
+        \[ \Delta\varphi_{i0} = 
+                \frac{¿acc.1.phi_i¡}{¿acc.I_mul.0¡}
+                + \frac{¿acc.2.phi_i¡+¿acc.3.phi_i¡}{¿acc.I_mul.1¡}
+                + \frac{¿acc.4.phi_i¡+¿acc.5.phi_i¡}{¿acc.I_mul.2¡}+\]
+              \[+ \frac{¿acc.6.phi_i¡+¿acc.7.phi_i¡}{¿acc.I_mul.3¡}
+                + \frac{¿acc.8.phi_i¡+¿acc.9.phi_i¡}{¿acc.I_mul.4¡}
+                + ¿acc.10.phi_i¡ = ¿acc.Phi¡'\]
+        
+        А суммарная погрешность:
+        \[ \Delta\varphi_{\sum} = \Delta\varphi_{i0}  + \Delta\varphi_{\text{л}} 
+        = ¿acc.Phi_l¡ + ¿acc.Phi¡ = ¿acc.Sum¡' \]
+        
+        
         
 
         

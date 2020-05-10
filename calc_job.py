@@ -1,7 +1,7 @@
 from engine import *
 from p1 import *
 from input import *
-from shaft_bearing import calcMinDiameter
+from shaft_bearing import calcMinDiameter, calcAccurance
 
 minEngineN, Mout = CalculatEnginePower(input_params['w_out'],
                                 input_params['e_out'],
@@ -66,4 +66,6 @@ if not res:
 
 
 calcMinDiameter(recalcM[4]['M'], gearGeometry[3]['d'][1]['d'], gearGeometry[4]['d'][0]['d'], shafts[3])
+
+calcAccurance(gearGeometry)
 print("END")
