@@ -203,9 +203,9 @@
             \begin{center}
                 \begin{tabular}{p{0.2\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}}
                     \hline
-                    Номер вала, p & I & II & III & IV & V & VI \\
+                    Номер вала, p & VI & V & IV & III & II & I \\
                     \hline
-                    \( M_p \), Нмм & ¿M0¡ & ¿M1¡ & ¿M2¡ & ¿M3¡ & ¿M4¡ & ¿M5¡ \\
+                    \( M_p \), Нмм & ¿M5¡ & ¿M4¡ & ¿M3¡ & ¿M2¡ & ¿M1¡ & ¿M0¡ \\
                     \hline
                 \end{tabular}
                 \caption{Оценочные значения моментов на валах}\label{tab:moments__shaft_estimate}
@@ -331,6 +331,44 @@
                 \caption{{Характеристики зубчатых колес}}\label{tab:gears_digest}
             \end{center}
         \end{table}
+
+    \subsubsection{Перерасчёт крутящих моментов}
+        Прежде для расчёта колёс мы получили оценочные значения крутящих моментов,
+        приняв КПД передач равным постоянному идеальному значению. 
+        В этом пункте пересчитаем эти моменты по более точным формулам (см. [1]):
+
+        \[ M_i = \frac{M_{i+1}}{i_{(2i-1, 2i)}\eta_{(2i-1, 2i)}\eta_{\text{подш.}}}, \]
+        \[ F_i = \frac{2M_{i+1}}{d_{2i}}, \]
+        \[ C_i = \frac{F_i+2,87}{F_i+0,17}, \]
+        \[ \eta_{(2i-1, 2i)} = 1 - \pi C_i\epsilon f (\frac{1}{z_{2i-1} + \frac{1}{z_{2i}}}), \]
+
+        где\qquad
+            \( z_{2i-1},\ z_{2i} \) - числа зубьев шестерни и колеса в данной передаче,\par 
+            \qquad f - коэффициент трения скольжения материалов опоры (f = 0,15) \par 
+            \qquad C - поправочный коэффициент,\par 
+            \qquad F - окружное усилие в зацеплении,\par 
+            \qquad \( \eta \) - КПД зацепления,\par 
+            \qquad \( \epsilon \) - коэффциент перекрытия (\( \epsilon=1,5 \)).\par
+        
+
+        Приведём таблицу с результатами вычислений:
+        \begin{table}[h!]
+            \begin{center}
+                \begin{tabular}{p{0.3\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}p{0.1\linewidth}}
+                    \hline
+                    Номер вала, p & VI & V & IV & III & II & I \\
+                    \hline
+                    Момент \( M \), Нмм & ¿M5¡ & ¿kpd.5.newM¡ & ¿kpd.4.newM¡ & ¿kpd.3.newM¡ & ¿kpd.2.newM¡ & ¿kpd.1.newM¡  \\
+                    \hline
+                    КПД, \( \eta \) & - & ¿kpd.5.kpd¡ & ¿kpd.4.kpd¡ & ¿kpd.3.kpd¡ & ¿kpd.2.kpd¡ & ¿kpd.1.kpd¡ \\
+                    \hline
+                \end{tabular}
+                \caption{Результаты вычисления КПД и моментов по уточненным формулам}\label{tab:gears_kpd}
+            \end{center}
+        \end{table}
+        
+        
+        
 
     
 \subsection{Силовые расчёты}
@@ -620,14 +658,17 @@
     \subsubsection{Расчёт размерной цепи}
         В качестве примера рассчитаем размерную цепь на валу. 
 
-    % \begin{figure}[]
-    %     \centering
-        
-    %     \caption{}
-    %     \label{}
-    % \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1\linewidth]{size_chain.png}
+        \caption{}
+        \label{Размерная цепь}
+    \end{figure}
         
         Для звеньев размерной цепи назначим допуски по 7 и 8 квалитетам:
+        \( A_1 = 27 h10(_{\pm0.084}),\ A_2 = 3 h10(_{-0,040}),
+        \ A_3=3 h7(_{-0,010}),\ A_4=18 h10 (_{-0.070})\).
+        \( A_1 \) - уменьшающее звено, остальные - увеличивающие.
 
         Номинальное значение замыкающего звена \( A_\Delta \) определяем 
         по формуле:
@@ -638,14 +679,23 @@
         \qquad \( A_q \) - номинальный размер q-го уменьшающего звена,\par
         \qquad n - число увеличивающих звеньев,\par 
         \qquad m - число уменьшающих звеньев.\par
+        
+        \[ A_\Delta = 27-3-3-18=3\ \text{мм} \]
+        
 
         Верхнее и нижнее предельные отклонения замыкающего звена:
-        \[ E_s(A_\Delta) = \sum_{}^{}E_s(A_{\text{ув.}}) - \sum_{}^{}E_i(A_{\text{ум.}}) \]
-
-        \[ E_i(A_\Delta) = \sum_{}^{}E_i(A_{\text{ув.}}) - \sum_{}^{}E_s(A_{\text{ум.}}) \]
+        \[ E_s(A_\Delta) = \sum_{}^{}E_s(A_{\text{ув.}}) - \sum_{}^{}E_i(A_{\text{ум.}}) =\]
+        \[ = 0,084 - (-0,04 - 0,01 - 0,07) = 0,204\ \text{мм} \]
+        
+        \[ E_i(A_\Delta) = \sum_{}^{}E_i(A_{\text{ув.}}) - \sum_{}^{}E_s(A_{\text{ум.}}) = -0,084\ \text{мм}\]
+        
+        Получаем: \( A_\Delta = 3_{-0,084}^{+0,204} \) мм.
+        
 
         Допуск замыкающего звена проверим по формуле:
         \[ T_\Delta = \sum_{j}^{}T_{j\ \text{ув.}} + \sum_{j}^{}T_{j\ \text{ум.}} = \sum_{j}^{}T_j \]
+        
+        \[ T A_\Delta = 2\cdot 0,084 + 0,04 + 0,01 + 0,07 = 0,288\ \text{мм} \]
         
         
         
@@ -663,13 +713,16 @@
         
         
 \newpage
-        ferefr
-\renewcommand\refname{Список использованных источников}
-\addcontentsline{toc}{section}{4. Список использованных источников}
-\bibliographystyle{utf8gost705u}  %% стилевой файл для оформления по ГОСТу
-\bibliography{biblio}
+%         ferefr
+% \renewcommand\refname{Список использованных источников}
+\section*{Список использованных источников}
+% \addcontentsline{toc}{section}{4. Список использованных источников}
+% \bibliographystyle{utf8gost705u}  %% стилевой файл для оформления по ГОСТу
+% \bibliography{biblio}
         
-[1] Тищенко \par
-[2] Шарловский
-    
+[1] Н.П.Нестерова, А.П.Коваленко, О.Ф.Тищенко. 
+    Элементы приборных устройств: Курсовое проектирование. Учебное пособие в 2-х ч.
+    Москва: Высшая школа, 1978. Ч1-328с, Ч2-232с. \par
+[2] Ю.В.Шарловский. Регулировочные устройства приборов и их элементы. 
+    Москва: Машиностроение, 1976. 311с.
 \end{document}

@@ -1,27 +1,23 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  10 MAY 2020 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350) (preloaded format=pdflatex 2020.4.6)  15 MAY 2020 03:46
 entering extended mode
 **/home/andrey/Documents/OKP/latex/work.gen.tex
 (/home/andrey/Documents/OKP/latex/work.gen.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-06>
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrartcl.cls
+L3 programming layer <2020-03-06> (/home/andrey/.miktex/texmfs/install/tex/late
+x/koma-script/scrartcl.cls
 Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
 (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
-
 (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
-
 (/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
-)))
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
+))) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
 \scr@dte@tocline@numbox=\box45
@@ -29,7 +25,6 @@ Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 137.
-
 
 Package scrartcl Warning: You've used obsolete option `14pt'.
 (scrartcl)                Usage of this option indicates an old document
@@ -54,8 +49,7 @@ Class scrartcl Info: File `size14.clo' used to setup font sizes on input line 2
 212.
 (/home/andrey/.miktex/texmfs/install/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/koma-script/typearea.sty
 Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
 \ta@bcor=\skip48
 \ta@div=\count167
@@ -69,7 +63,6 @@ Package typearea Info: You've used standard option `a4paper'.
 \ta@vblk=\skip50
 \ta@temp=\skip51
 \footheight=\skip52
-
 
 Package typearea Warning: DIV for 14.0pt and used papersize
 (typearea)                not defined!
@@ -149,15 +142,12 @@ Class scrartcl Info: Redefining `\numberline' on input line 6178.
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-)
-(/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-
 (/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
 (/usr/local/share/miktex-texmf/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
@@ -359,13 +349,10 @@ File: t2aenc.dfu 2019/11/14 v1.2k UTF-8 support for inputenc
 ))
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 1
 12.
-
 (/home/andrey/.miktex/texmfs/install/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
-(/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
+)) (/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
-
 (/usr/local/share/miktex-texmf/tex/generic/babel/switch.def
 File: switch.def 2020/03/22 3.42 Babel switching mechanism
 )
@@ -375,23 +362,19 @@ File: switch.def 2020/03/22 3.42 Babel switching mechanism
 (/usr/local/share/miktex-texmf/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/babel-russian/russianb.ldf
+) (/home/andrey/.miktex/texmfs/install/tex/latex/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
-
 (/usr/local/share/miktex-texmf/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
 \babel@savecnt=\count176
 \U@D=\dimen135
-
 (/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count177
 )
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
-)
-(/usr/local/share/miktex-texmf/tex/latex/babel-english/english.ldf
+) (/usr/local/share/miktex-texmf/tex/latex/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -399,20 +382,15 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 108.
-))
-(/home/andrey/.miktex/texmfs/install/tex/latex/t2/mathtext.sty
+)) (/home/andrey/.miktex/texmfs/install/tex/latex/t2/mathtext.sty
 Package: mathtext 2018/04/13 v1.1 transparent text-and-math defs
 LaTeX Info: Redefining \halign on input line 119.
-)
-(/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty
+) (/usr/local/share/miktex-texmf/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/t2/misccorr.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/t2/misccorr.sty
 Package: misccorr 1999/09/23 v0.1 misc corrections for russian typesetting
-
 (/usr/local/share/miktex-texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
 (/usr/local/share/miktex-texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
@@ -421,39 +399,30 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/share/miktex-texmf/tex/latex/tools/enumerate.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
 )
 \c@rlistctr=\count178
-)
-(/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-
 (/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-
 (/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
-)
-(/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
+) (/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
 (/home/andrey/.miktex/texmfs/install/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
@@ -469,16 +438,12 @@ Package caption Info: KOMA-Script document class detected.
 Package caption Info: KOMA-Script document class.
 \c@caption@flags=\count179
 \c@continuedfloat=\count180
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/fancybox/fancybox.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
-
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box47
 \shadowsize=\dimen145
@@ -516,25 +481,20 @@ s
 \f@nch@O@erf=\skip69
 \f@nch@O@olf=\skip70
 \f@nch@O@orf=\skip71
-)
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip72
-
 For additional information on amsmath, use the `?' option.
 (/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
 (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen146
-))
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen147
-)
-(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
+) (/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count181
@@ -576,13 +536,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-)
-(/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+) (/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
 (/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
 (/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
@@ -598,18 +555,13 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen161
 \Gm@layoutvoffset=\dimen162
 \Gm@dimlist=\toks29
-
-(/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def
+(/home/andrey/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/usr/lo
+cal/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count196
 \l__pdf_internal_box=\box51
 )
-(/home/andrey/Documents/OKP/latex/work.gen.aux
-
-LaTeX Warning: Label `tab:gears_digest' multiply defined.
-
-)
+No file work.gen.aux.
 \openout1 = `work.gen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -631,7 +583,7 @@ LaTeX Font Info:    ... okay on input line 28.
 Package scrbase Info: activating english \contentsname on input line 28.
 Package scrbase Info: activating english \listfigurename on input line 28.
 Package scrbase Info: activating english \listtablename on input line 28.
- (/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count197
 \scratchdimen=\dimen163
@@ -654,7 +606,6 @@ Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 28.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -696,13 +647,11 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
-
 (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
 8.
-
 (/usr/local/share/miktex-texmf/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -919,196 +868,259 @@ Overfull \hbox (10.04355pt too wide) in paragraph at lines 314--334
  []
 
 
-Overfull \hbox (22.20517pt too wide) in paragraph at lines 338--341
+Overfull \hbox (0.32465pt too wide) in paragraph at lines 336--339
+[]\T2A/cmr/m/n/14.4 Прежде для расчјта колјс мы получили оценочные значения кру
+тящих
+ []
+
+
+Overfull \hbox (19.85596pt too wide) in paragraph at lines 336--339
+\T2A/cmr/m/n/14.4 моментов, приняв КПД передач равным постоянному идеальному зн
+ачению.
+ []
+
+[7]
+Overfull \hbox (38.49356pt too wide) in paragraph at lines 357--366
+ [] 
+ []
+
+
+Overfull \hbox (22.20517pt too wide) in paragraph at lines 376--379
 []\T2A/cmr/m/n/14.4 В зубчатых передачах имеет место мјртвый ход при перемене н
 аправления
  []
 
 
-Overfull \hbox (3.27925pt too wide) in paragraph at lines 338--341
+Overfull \hbox (3.27925pt too wide) in paragraph at lines 376--379
 \T2A/cmr/m/n/14.4 колјсами. Влияние его можно уменьшить, например, тонкой подст
 ройкой
  []
 
 
-Overfull \hbox (22.9391pt too wide) in paragraph at lines 338--341
+Overfull \hbox (22.9391pt too wide) in paragraph at lines 376--379
 \T2A/cmr/m/n/14.4 положения колјс, но эффективнее установить, например, зазоров
 ыбирающее
  []
 
-[7]
 <loftwheel_shema.png, id=38, 1606.0pt x 1284.8pt>
 File: loftwheel_shema.png Graphic file (type png)
 <use loftwheel_shema.png>
-Package pdftex.def Info: loftwheel_shema.png  used on input line 344.
+Package pdftex.def Info: loftwheel_shema.png  used on input line 382.
 (pdftex.def)             Requested size: 455.24411pt x 364.19176pt.
 
-Overfull \hbox (36.00691pt too wide) in paragraph at lines 350--360
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (36.00691pt too wide) in paragraph at lines 388--398
 [][] 
  []
-
-[8 </home/andrey/Documents/OKP/latex/loftwheel_shema.png (PNG copy)>]
-Overfull \hbox (8.0388pt too wide) in paragraph at lines 369--369
-[]\T2A/cmr/m/n/14.4 где| 
- []
-
-
-Overfull \hbox (5.73103pt too wide) in paragraph at lines 369--369
-[]\T2A/cmr/m/n/14.4 A| 
- []
-
-
-Overfull \hbox (3.06586pt too wide) in paragraph at lines 370--370
-[]\T2A/cmr/m/n/14.4 n| 
- []
-
-
-Underfull \hbox (badness 3872) in paragraph at lines 370--371
-[]\T2A/cmr/m/n/14.4 - число зубьев, на которое производится взаимное
- []
-
-
-Overfull \hbox (4.0173pt too wide) in paragraph at lines 371--371
-[]\T2A/cmr/m/n/14.4 L| 
- []
-
-[9]
-<shaft_schema.png, id=46, 481.8pt x 304.13625pt>
-File: shaft_schema.png Graphic file (type png)
-<use shaft_schema.png>
-Package pdftex.def Info: shaft_schema.png  used on input line 416.
-(pdftex.def)             Requested size: 318.66948pt x 201.16676pt.
- [10 </home/andrey/Documents/OKP/latex/shaft_schema.png>]
-<sh_yoz_2.png, id=53, 523.9575pt x 190.7125pt>
-File: sh_yoz_2.png Graphic file (type png)
-<use sh_yoz_2.png>
-Package pdftex.def Info: sh_yoz_2.png  used on input line 427.
-(pdftex.def)             Requested size: 364.19667pt x 132.56662pt.
-<sh_xoz_2.png, id=54, 523.9575pt x 190.7125pt>
-File: sh_xoz_2.png Graphic file (type png)
-<use sh_xoz_2.png>
-Package pdftex.def Info: sh_xoz_2.png  used on input line 438.
-(pdftex.def)             Requested size: 364.19667pt x 132.56662pt.
- [11 </home/andrey/Documents/OKP/latex/sh_yoz_2.png> </home/andrey/Documents/OK
-P/latex/sh_xoz_2.png>]
-<epure_yoz.png, id=60, 2806.485pt x 1580.90625pt>
-File: epure_yoz.png Graphic file (type png)
-<use epure_yoz.png>
-Package pdftex.def Info: epure_yoz.png  used on input line 449.
-(pdftex.def)             Requested size: 364.19667pt x 205.13907pt.
-<epure_xoz.png, id=61, 2659.9375pt x 1009.7725pt>
-File: epure_xoz.png Graphic file (type png)
-<use epure_xoz.png>
-Package pdftex.def Info: epure_xoz.png  used on input line 454.
-(pdftex.def)             Requested size: 364.19667pt x 138.25479pt.
-<epure_circ_2.png, id=62, 523.9575pt x 117.43875pt>
-File: epure_circ_2.png Graphic file (type png)
-<use epure_circ_2.png>
-Package pdftex.def Info: epure_circ_2.png  used on input line 458.
-(pdftex.def)             Requested size: 364.19667pt x 81.63312pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 </home/andrey/Documents/OKP/latex/epure_yoz.png> </home/andrey/Documents/OK
-P/latex/epure_xoz.png>]
-Overfull \hbox (16.49948pt too wide) in paragraph at lines 474--474
+[8]
+Overfull \hbox (8.0388pt too wide) in paragraph at lines 407--407
+[]\T2A/cmr/m/n/14.4 где| 
+ []
+
+
+Overfull \hbox (5.73103pt too wide) in paragraph at lines 407--407
+[]\T2A/cmr/m/n/14.4 A| 
+ []
+
+
+Overfull \hbox (3.06586pt too wide) in paragraph at lines 408--408
+[]\T2A/cmr/m/n/14.4 n| 
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 408--409
+[]\T2A/cmr/m/n/14.4 - число зубьев, на которое производится взаимное
+ []
+
+
+Overfull \hbox (4.0173pt too wide) in paragraph at lines 409--409
+[]\T2A/cmr/m/n/14.4 L| 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9 <./loftwheel_shema.png (PNG copy)>] [10]
+<shaft_schema.png, id=50, 481.8pt x 304.13625pt>
+File: shaft_schema.png Graphic file (type png)
+<use shaft_schema.png>
+Package pdftex.def Info: shaft_schema.png  used on input line 454.
+(pdftex.def)             Requested size: 318.66948pt x 201.16676pt.
+<sh_yoz_2.png, id=52, 523.9575pt x 190.7125pt>
+File: sh_yoz_2.png Graphic file (type png)
+<use sh_yoz_2.png>
+Package pdftex.def Info: sh_yoz_2.png  used on input line 465.
+(pdftex.def)             Requested size: 364.19667pt x 132.56662pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./shaft_schema.png>]
+<sh_xoz_2.png, id=57, 523.9575pt x 190.7125pt>
+File: sh_xoz_2.png Graphic file (type png)
+<use sh_xoz_2.png>
+Package pdftex.def Info: sh_xoz_2.png  used on input line 476.
+(pdftex.def)             Requested size: 364.19667pt x 132.56662pt.
+<epure_yoz.png, id=58, 2806.485pt x 1580.90625pt>
+File: epure_yoz.png Graphic file (type png)
+<use epure_yoz.png>
+Package pdftex.def Info: epure_yoz.png  used on input line 487.
+(pdftex.def)             Requested size: 364.19667pt x 205.13907pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<epure_xoz.png, id=59, 2659.9375pt x 1009.7725pt>
+File: epure_xoz.png Graphic file (type png)
+<use epure_xoz.png>
+Package pdftex.def Info: epure_xoz.png  used on input line 492.
+(pdftex.def)             Requested size: 364.19667pt x 138.25479pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<epure_circ_2.png, id=60, 523.9575pt x 117.43875pt>
+File: epure_circ_2.png Graphic file (type png)
+<use epure_circ_2.png>
+Package pdftex.def Info: epure_circ_2.png  used on input line 496.
+(pdftex.def)             Requested size: 364.19667pt x 81.63312pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./sh_yoz_2.png> <./sh_xoz_2.png>]
+
+LaTeX Warning: Reference `tab:gear_materials' on page 13 undefined on input lin
+e 512.
+
+
+Overfull \hbox (16.49948pt too wide) in paragraph at lines 512--512
 []\T2A/cmr/m/n/14.4 Материалом выберем сталь 40Х, параметры которой приведены в
  таблице
  []
 
-
-Overfull \hbox (17.57896pt too wide) in paragraph at lines 483--490
+[13 <./epure_yoz.png> <./epure_xoz.png>]
+Overfull \hbox (17.57896pt too wide) in paragraph at lines 521--528
 \T2A/cmr/m/n/14.4 зубчатых колјс имеют одинаковую толщину d=4мм, то рассчитаем 
 толщину
  []
 
-[13 </home/andrey/Documents/OKP/latex/epure_circ_2.png>]
-Overfull \hbox (31.71281pt too wide) in paragraph at lines 495--496
+
+Overfull \hbox (31.71281pt too wide) in paragraph at lines 533--534
 []\T2A/cmr/m/n/14.4 Подберјм опоры для валов. Выберем опоры качения, а именно -
  радиальные
  []
 
+[14 <./epure_circ_2.png>]
 
-LaTeX Warning: Citation `Dorf' on page 14 undefined on input line 511.
+LaTeX Warning: Citation `Dorf' on page 15 undefined on input line 549.
 
 
-Overfull \hbox (34.53389pt too wide) in paragraph at lines 510--526
+Overfull \hbox (34.53389pt too wide) in paragraph at lines 548--564
 \T2A/cmr/m/n/14.4 шариковый радиальный однорядный ќ2000083 ГОСТ 8538-74" со сле
 дующими
  []
 
 
-Overfull \hbox (5.44344pt too wide) in paragraph at lines 532--536
+Overfull \hbox (5.44344pt too wide) in paragraph at lines 570--574
 \T2A/cmr/m/n/14.4 часто применяемую для точных передач. Кроме того, приняв во в
 нимание
  []
 
 
-Overfull \hbox (7.66252pt too wide) in paragraph at lines 532--536
+Overfull \hbox (7.66252pt too wide) in paragraph at lines 570--574
 \T2A/cmr/m/n/14.4 окружные скорости колјс, возможное изменение размеров из-за к
 олебаний
  []
 
-[14]
-Overfull \hbox (11.81657pt too wide) in paragraph at lines 542--544
+[15]
+Overfull \hbox (11.81657pt too wide) in paragraph at lines 580--582
 []\T2A/cmr/m/n/14.4 Рассчитаем люфтовую погрешность. Она складывается из погреш
 ностей
  []
 
 
-Overfull \hbox (39.67972pt too wide) in paragraph at lines 542--544
+Overfull \hbox (39.67972pt too wide) in paragraph at lines 580--582
 \T2A/cmr/m/n/14.4 элементарных передач $\OT1/cmr/m/n/14.4 \OML/cmm/m/it/14.4 '
 []$\T2A/cmr/m/n/14.4 , нормированных на соответствующее передаточное
  []
 
 
-Overfull \hbox (71.993pt too wide) in paragraph at lines 556--563
+Overfull \hbox (71.993pt too wide) in paragraph at lines 594--601
  [] 
  []
 
-[15]
-Overfull \hbox (14.77483pt too wide) in paragraph at lines 584--584
+[16]
+Overfull \hbox (14.77483pt too wide) in paragraph at lines 622--622
 [] $\OML/cmm/m/it/14.4 F[]$ \T2A/cmr/m/n/14.4 - допуск на накопленную погрешнос
 ть шага зубчатого колеса,мкм; 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--596
+Underfull \hbox (badness 10000) in paragraph at lines 634--634
 []$\OML/cmm/m/it/14.4 F[]$\T2A/cmr/m/n/14.4 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--597
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
 []$\OML/cmm/m/it/14.4 F[]$\T2A/cmr/m/n/14.4 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 636--636
 []$\OT1/cmr/m/n/14.4 \OML/cmm/m/it/14.4 '[];$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--598
+Underfull \hbox (badness 10000) in paragraph at lines 636--636
 \T2A/cmr/m/n/14.4 угл.
  []
 
 
-Overfull \hbox (40.98714pt too wide) in paragraph at lines 591--602
+Overfull \hbox (40.98714pt too wide) in paragraph at lines 629--640
  [] 
  []
 
-[16]
-Overfull \hbox (2.97171pt too wide) in paragraph at lines 632--634
+<size_chain.png, id=81, 2901.84125pt x 1406.25375pt>
+File: size_chain.png Graphic file (type png)
+<use size_chain.png>
+Package pdftex.def Info: size_chain.png  used on input line 663.
+(pdftex.def)             Requested size: 455.24411pt x 220.60637pt.
+[17]
+Overfull \hbox (8.98578pt too wide) in paragraph at lines 668--672
+\OML/cmm/m/it/14.4 A[] \OT1/cmr/m/n/14.4 = 27\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/1
+4.4 10([])\OML/cmm/m/it/14.4 ;  A[] \OT1/cmr/m/n/14.4 = 3\OML/cmm/m/it/14.4 h\O
+T1/cmr/m/n/14.4 10([])\OML/cmm/m/it/14.4 ;  A[] \OT1/cmr/m/n/14.4 = 3\OML/cmm/m
+/it/14.4 h\OT1/cmr/m/n/14.4 7([])\OML/cmm/m/it/14.4 ;  A[] \OT1/cmr/m/n/14.4 = 
+18\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/14.4 10([])$\T2A/cmr/m/n/14.4 .
+ []
+
+
+Overfull \hbox (2.97171pt too wide) in paragraph at lines 673--675
 []\T2A/cmr/m/n/14.4 Номинальное значение замыкающего звена $\OML/cmm/m/it/14.4 
 A[]$ \T2A/cmr/m/n/14.4 определяем по формуле: 
  []
 
-[17]
-No file work.gen.bbl.
+[18 <./size_chain.png>] [19]
+Overfull \hbox (8.98099pt too wide) in paragraph at lines 723--725
+[]\T2A/cmr/m/n/14.4 [1] Н.П.Нестерова, А.П.Коваленко, О.Ф.Тищенко. Элементы при
+борных
+ []
+
+
+Package lastpage Warning: Rerun to get the references right on input line 728.
+
 
 AED: lastpage setting LastPage
-[18] (/home/andrey/Documents/OKP/latex/work.gen.aux)
+
+Overfull \hbox (27.79112pt too wide) in paragraph at lines 726--728
+[]\T2A/cmr/m/n/14.4 [2] Ю.В.Шарловский. Регулировочные устройства приборов и их
+ элементы.
+ []
+
+[20] (work.gen.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1116,14 +1128,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8622 strings out of 480932
- 147449 string characters out of 2908752
- 503346 words of memory out of 3000000
- 24370 multiletter control sequences out of 15000+200000
+ 8625 strings out of 480932
+ 147438 string characters out of 2908752
+ 503283 words of memory out of 3000000
+ 24375 multiletter control sequences out of 15000+200000
  542668 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,15n,56p,10184b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1144,10 +1156,10 @@ ktex-texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-te
 xmf/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/miktex-texmf/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type
 1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/andrey/Documents/OKP/latex/work.gen.pdf (18 pages, 3690
-17 bytes).
+Output written on /home/andrey/Documents/OKP/latex/work.gen.pdf (20 pages, 4016
+30 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
+ 403 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
